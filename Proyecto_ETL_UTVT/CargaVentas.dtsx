@@ -11,8 +11,8 @@
   DTS:LocaleID="2058"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="87"
-  DTS:VersionGUID="{DC618634-02E9-43CB-A32D-DC9858DDBDF6}">
+  DTS:VersionBuild="95"
+  DTS:VersionGUID="{1C68FA01-F05F-41DD-B713-882739D51B6B}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -26,6 +26,485 @@
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
           DTS:ConnectionString="Data Source=LapOctavio;Initial Catalog=DWUTVTVentas;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Application Name=SSIS-Package-{796FE848-771A-4862-AC99-B903637096C6}cm_DWUTVTVentas;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[cm_ErroresClientes]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{9294B731-0808-47EA-AC71-B7D8470CE64B}"
+      DTS:ObjectName="cm_ErroresClientes">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="2058"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\al222\Workspace\Git\practicasAlmeida\Proyecto_ETL_UTVT\data\errores\ErroresClientes.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="IdCliente"
+              DTS:DTSID="{F63CE405-BFC0-4567-9640-F0F3B7E1DE50}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Nombre"
+              DTS:DTSID="{0FE4F4E0-0E97-4FA1-97D1-1E9E4C237DCF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Apellido"
+              DTS:DTSID="{DDFCC5EC-738A-4043-90C7-B267D544C4C5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="150"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Correo"
+              DTS:DTSID="{C15AAC13-54E9-4371-8327-54DEA801593D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Telefono"
+              DTS:DTSID="{381A2319-914A-4E4E-9338-0D590E69936B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Ciudad"
+              DTS:DTSID="{5BB93160-9C64-4359-95AC-1A54FE9F2E7A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Estado"
+              DTS:DTSID="{4512149B-2A25-4E6B-8F21-0394683EDEF7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Pais"
+              DTS:DTSID="{65B167D3-2208-4666-9B50-9D7B079731ED}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Activo"
+              DTS:DTSID="{6885C4FC-75F9-4045-8112-15BF96309515}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FechaRegistro"
+              DTS:DTSID="{94740B03-72AE-4F18-AB05-BF61CF9DA02E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="500"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MotivoRechazo"
+              DTS:DTSID="{1FDAECD6-6ACC-43D8-B2A0-C085A13BC305}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NombreFlujo"
+              DTS:DTSID="{2CCCCEF4-7A9E-4A58-B2B8-0D6652803658}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="150"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ArchivoOrigen"
+              DTS:DTSID="{04FD5339-EBE3-4AC8-A1AD-EC34B0C18BFF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NombrePaquete"
+              DTS:DTSID="{64CF6425-1E23-4ACF-8B1D-E96479600A41}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FilaOrigen"
+              DTS:DTSID="{26398942-3E29-4060-8305-C6C22DB03326}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[cm_ErroresProductos]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{6E63C350-A8C3-41C2-AD43-7305F9A26EBC}"
+      DTS:ObjectName="cm_ErroresProductos">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="2058"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\al222\Workspace\Git\practicasAlmeida\Proyecto_ETL_UTVT\data\errores\ErroresProductos.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="IdProducto"
+              DTS:DTSID="{E1A68F92-4F4A-4670-8975-FA280A053B98}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NombreProducto"
+              DTS:DTSID="{9A96B272-D0EB-4106-BEA0-C21A6595D47E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Categoria"
+              DTS:DTSID="{F70A778C-0988-4DE3-A11E-58460E5C1286}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Precio"
+              DTS:DTSID="{F84628F2-6238-4E22-9929-74FD1E1A52FB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Costo"
+              DTS:DTSID="{144AE565-E7B2-4F6B-8E2C-64AA44158EF3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Activo"
+              DTS:DTSID="{0FD1DE68-3857-41DA-B85C-94F3A548B877}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="IdProducto_int"
+              DTS:DTSID="{DFE54AD1-0EB1-4878-B14D-2F150C6B1952}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="131"
+              DTS:DataPrecision="12"
+              DTS:DataScale="2"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Precio_dec"
+              DTS:DTSID="{C4917BD0-FC70-404F-9591-EE9009DADF24}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="131"
+              DTS:DataPrecision="12"
+              DTS:DataScale="2"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Costo_dec"
+              DTS:DTSID="{95CC7111-A359-4373-8DD5-5C6036CA2808}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="500"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MotivoRechazo"
+              DTS:DTSID="{CA6DD872-F4E4-4F8A-BEE8-1A418624E55F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NombreFlujo"
+              DTS:DTSID="{335551AB-7003-4C96-AEC9-484DAE54AB7A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="150"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ArchivoOrigen"
+              DTS:DTSID="{DACA4335-2465-4F86-B167-F127F607E417}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NombrePaquete"
+              DTS:DTSID="{364F9947-20C6-4705-9207-CBEC23D18ACC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FilaOrigen"
+              DTS:DTSID="{3EFB50F7-059C-454D-AE1B-D5A7958B6960}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[cm_ErroresVentas]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{208BF7D9-9C06-4EE9-BD72-CFF7EC603181}"
+      DTS:ObjectName="cm_ErroresVentas">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="2058"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\al222\Workspace\Git\practicasAlmeida\Proyecto_ETL_UTVT\data\errores\ErroresVentas.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="IdVenta"
+              DTS:DTSID="{FA293721-0D0D-47D3-8228-A10231588D77}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="IdCliente"
+              DTS:DTSID="{FC2D58B6-E9A1-41AB-8AAC-EE83CC68EA16}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="IdProducto"
+              DTS:DTSID="{95096088-9A36-4A65-AA3B-59D70A355E80}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Cantidad"
+              DTS:DTSID="{DD9B8A34-E1AF-425E-882D-DC6896362796}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PrecioUnitario"
+              DTS:DTSID="{EF1A877E-A81B-4797-BA9D-0EA09888E0D5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FechaVenta"
+              DTS:DTSID="{CCA7537C-BF3A-4200-AF19-8F0D95D7DD9F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Sucursal"
+              DTS:DTSID="{771BBBA5-EEAD-4363-9155-C4D42DBC57DF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="IdVenta_int"
+              DTS:DTSID="{A042BD68-5AB1-4AE6-A819-CB5FE7B1AC62}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="IdCliente_int"
+              DTS:DTSID="{D44F1B77-DDAC-4559-AF37-2C610F56C086}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="IdProducto_int"
+              DTS:DTSID="{74670A63-41A9-4501-9B2B-7C69A9216B0D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Cantidad_int"
+              DTS:DTSID="{89EC4047-0166-4015-A327-AD82BFCCFAD0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="131"
+              DTS:DataPrecision="12"
+              DTS:DataScale="2"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PrecioUnitario_dec"
+              DTS:DTSID="{3178E449-078E-469C-80C9-D0CD37F142FD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="133"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FechaVenta_date"
+              DTS:DTSID="{86C6CCDA-3CF9-40D2-A9C1-CAB6E438067C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="500"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MotivoRechazo"
+              DTS:DTSID="{290DEEF8-4136-47EB-B9D4-C8576C572DEC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NombreFlujo"
+              DTS:DTSID="{CB25034A-9477-4905-B98B-40E5707424C6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="150"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ArchivoOrigen"
+              DTS:DTSID="{B041757B-6A6A-4193-A260-D438C5F01E4D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NombrePaquete"
+              DTS:DTSID="{C3C0DC67-F874-4090-88A3-BC1B2E52E1BC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="1000"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FilaOrigen"
+              DTS:DTSID="{2ECEA360-4ED6-45A6-88E4-E76FA6CA4AB3}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -366,7 +845,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="FechaProceso">
       <DTS:VariableValue
-        DTS:DataType="7">7/7/2026 10:10:53 PM</DTS:VariableValue>
+        DTS:DataType="7">7/8/2026 9:14:24 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -440,7 +919,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="NombreZip">
       <DTS:VariableValue
-        DTS:DataType="8">Procesados_20260707_221053.zip</DTS:VariableValue>
+        DTS:DataType="8">Procesados_20260708_211424.zip</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -1208,6 +1687,258 @@
                   </outputs>
                 </component>
                 <component
+                  refId="Package\Cargas\DFT_Clientes\ErroresClientes CSV"
+                  componentClassID="Microsoft.FlatFileDestination"
+                  contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                  description="Flat File Destination"
+                  localeId="2058"
+                  name="ErroresClientes CSV">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      description="Specifies whether the data will overwrite or append to the destination file."
+                      name="Overwrite">true</property>
+                    <property
+                      dataType="System.Null"
+                      description="Specifies the text to write to the destination file before any data is written."
+                      expressionType="Notify"
+                      name="Header" />
+                    <property
+                      dataType="System.Boolean"
+                      description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
+                      name="EscapeQualifier">false</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Cargas\DFT_Clientes\ErroresClientes CSV.Connections[FlatFileConnection]"
+                      connectionManagerID="Package.ConnectionManagers[cm_ErroresClientes]"
+                      connectionManagerRefId="Package.ConnectionManagers[cm_ErroresClientes]"
+                      name="FlatFileConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Cargas\DFT_Clientes\ErroresClientes CSV.Inputs[Flat File Destination Input]"
+                      hasSideEffects="true"
+                      name="Flat File Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Cargas\DFT_Clientes\ErroresClientes CSV.Inputs[Flat File Destination Input].Columns[IdCliente]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="IdCliente"
+                          externalMetadataColumnId="Package\Cargas\DFT_Clientes\ErroresClientes CSV.Inputs[Flat File Destination Input].ExternalColumns[IdCliente]"
+                          lineageId="Package\Cargas\DFT_Clientes\Unir errores clientes.Outputs[Union All Output 1].Columns[IdCliente]" />
+                        <inputColumn
+                          refId="Package\Cargas\DFT_Clientes\ErroresClientes CSV.Inputs[Flat File Destination Input].Columns[Nombre]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="100"
+                          cachedName="Nombre"
+                          externalMetadataColumnId="Package\Cargas\DFT_Clientes\ErroresClientes CSV.Inputs[Flat File Destination Input].ExternalColumns[Nombre]"
+                          lineageId="Package\Cargas\DFT_Clientes\Unir errores clientes.Outputs[Union All Output 1].Columns[Nombre]" />
+                        <inputColumn
+                          refId="Package\Cargas\DFT_Clientes\ErroresClientes CSV.Inputs[Flat File Destination Input].Columns[Apellido]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="100"
+                          cachedName="Apellido"
+                          externalMetadataColumnId="Package\Cargas\DFT_Clientes\ErroresClientes CSV.Inputs[Flat File Destination Input].ExternalColumns[Apellido]"
+                          lineageId="Package\Cargas\DFT_Clientes\Unir errores clientes.Outputs[Union All Output 1].Columns[Apellido]" />
+                        <inputColumn
+                          refId="Package\Cargas\DFT_Clientes\ErroresClientes CSV.Inputs[Flat File Destination Input].Columns[Correo]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="150"
+                          cachedName="Correo"
+                          externalMetadataColumnId="Package\Cargas\DFT_Clientes\ErroresClientes CSV.Inputs[Flat File Destination Input].ExternalColumns[Correo]"
+                          lineageId="Package\Cargas\DFT_Clientes\Unir errores clientes.Outputs[Union All Output 1].Columns[Correo]" />
+                        <inputColumn
+                          refId="Package\Cargas\DFT_Clientes\ErroresClientes CSV.Inputs[Flat File Destination Input].Columns[Telefono]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Telefono"
+                          externalMetadataColumnId="Package\Cargas\DFT_Clientes\ErroresClientes CSV.Inputs[Flat File Destination Input].ExternalColumns[Telefono]"
+                          lineageId="Package\Cargas\DFT_Clientes\Unir errores clientes.Outputs[Union All Output 1].Columns[Telefono]" />
+                        <inputColumn
+                          refId="Package\Cargas\DFT_Clientes\ErroresClientes CSV.Inputs[Flat File Destination Input].Columns[Ciudad]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="100"
+                          cachedName="Ciudad"
+                          externalMetadataColumnId="Package\Cargas\DFT_Clientes\ErroresClientes CSV.Inputs[Flat File Destination Input].ExternalColumns[Ciudad]"
+                          lineageId="Package\Cargas\DFT_Clientes\Unir errores clientes.Outputs[Union All Output 1].Columns[Ciudad]" />
+                        <inputColumn
+                          refId="Package\Cargas\DFT_Clientes\ErroresClientes CSV.Inputs[Flat File Destination Input].Columns[Estado]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="100"
+                          cachedName="Estado"
+                          externalMetadataColumnId="Package\Cargas\DFT_Clientes\ErroresClientes CSV.Inputs[Flat File Destination Input].ExternalColumns[Estado]"
+                          lineageId="Package\Cargas\DFT_Clientes\Unir errores clientes.Outputs[Union All Output 1].Columns[Estado]" />
+                        <inputColumn
+                          refId="Package\Cargas\DFT_Clientes\ErroresClientes CSV.Inputs[Flat File Destination Input].Columns[Pais]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="100"
+                          cachedName="Pais"
+                          externalMetadataColumnId="Package\Cargas\DFT_Clientes\ErroresClientes CSV.Inputs[Flat File Destination Input].ExternalColumns[Pais]"
+                          lineageId="Package\Cargas\DFT_Clientes\Unir errores clientes.Outputs[Union All Output 1].Columns[Pais]" />
+                        <inputColumn
+                          refId="Package\Cargas\DFT_Clientes\ErroresClientes CSV.Inputs[Flat File Destination Input].Columns[Activo]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Activo"
+                          externalMetadataColumnId="Package\Cargas\DFT_Clientes\ErroresClientes CSV.Inputs[Flat File Destination Input].ExternalColumns[Activo]"
+                          lineageId="Package\Cargas\DFT_Clientes\Unir errores clientes.Outputs[Union All Output 1].Columns[Activo]" />
+                        <inputColumn
+                          refId="Package\Cargas\DFT_Clientes\ErroresClientes CSV.Inputs[Flat File Destination Input].Columns[FechaRegistro]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="FechaRegistro"
+                          externalMetadataColumnId="Package\Cargas\DFT_Clientes\ErroresClientes CSV.Inputs[Flat File Destination Input].ExternalColumns[FechaRegistro]"
+                          lineageId="Package\Cargas\DFT_Clientes\Unir errores clientes.Outputs[Union All Output 1].Columns[FechaRegistro]" />
+                        <inputColumn
+                          refId="Package\Cargas\DFT_Clientes\ErroresClientes CSV.Inputs[Flat File Destination Input].Columns[MotivoRechazo]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="500"
+                          cachedName="MotivoRechazo"
+                          externalMetadataColumnId="Package\Cargas\DFT_Clientes\ErroresClientes CSV.Inputs[Flat File Destination Input].ExternalColumns[MotivoRechazo]"
+                          lineageId="Package\Cargas\DFT_Clientes\Unir errores clientes.Outputs[Union All Output 1].Columns[MotivoRechazo]" />
+                        <inputColumn
+                          refId="Package\Cargas\DFT_Clientes\ErroresClientes CSV.Inputs[Flat File Destination Input].Columns[NombreFlujo]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="100"
+                          cachedName="NombreFlujo"
+                          externalMetadataColumnId="Package\Cargas\DFT_Clientes\ErroresClientes CSV.Inputs[Flat File Destination Input].ExternalColumns[NombreFlujo]"
+                          lineageId="Package\Cargas\DFT_Clientes\Unir errores clientes.Outputs[Union All Output 1].Columns[NombreFlujo]" />
+                        <inputColumn
+                          refId="Package\Cargas\DFT_Clientes\ErroresClientes CSV.Inputs[Flat File Destination Input].Columns[ArchivoOrigen]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="150"
+                          cachedName="ArchivoOrigen"
+                          externalMetadataColumnId="Package\Cargas\DFT_Clientes\ErroresClientes CSV.Inputs[Flat File Destination Input].ExternalColumns[ArchivoOrigen]"
+                          lineageId="Package\Cargas\DFT_Clientes\Unir errores clientes.Outputs[Union All Output 1].Columns[ArchivoOrigen]" />
+                        <inputColumn
+                          refId="Package\Cargas\DFT_Clientes\ErroresClientes CSV.Inputs[Flat File Destination Input].Columns[NombrePaquete]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="100"
+                          cachedName="NombrePaquete"
+                          externalMetadataColumnId="Package\Cargas\DFT_Clientes\ErroresClientes CSV.Inputs[Flat File Destination Input].ExternalColumns[NombrePaquete]"
+                          lineageId="Package\Cargas\DFT_Clientes\Unir errores clientes.Outputs[Union All Output 1].Columns[NombrePaquete]" />
+                        <inputColumn
+                          refId="Package\Cargas\DFT_Clientes\ErroresClientes CSV.Inputs[Flat File Destination Input].Columns[FilaOrigen]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="1000"
+                          cachedName="FilaOrigen"
+                          externalMetadataColumnId="Package\Cargas\DFT_Clientes\ErroresClientes CSV.Inputs[Flat File Destination Input].ExternalColumns[FilaOrigen]"
+                          lineageId="Package\Cargas\DFT_Clientes\Unir errores clientes.Outputs[Union All Output 1].Columns[FilaOrigen]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Cargas\DFT_Clientes\ErroresClientes CSV.Inputs[Flat File Destination Input].ExternalColumns[IdCliente]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="IdCliente" />
+                        <externalMetadataColumn
+                          refId="Package\Cargas\DFT_Clientes\ErroresClientes CSV.Inputs[Flat File Destination Input].ExternalColumns[Nombre]"
+                          codePage="1252"
+                          dataType="str"
+                          length="100"
+                          name="Nombre" />
+                        <externalMetadataColumn
+                          refId="Package\Cargas\DFT_Clientes\ErroresClientes CSV.Inputs[Flat File Destination Input].ExternalColumns[Apellido]"
+                          codePage="1252"
+                          dataType="str"
+                          length="100"
+                          name="Apellido" />
+                        <externalMetadataColumn
+                          refId="Package\Cargas\DFT_Clientes\ErroresClientes CSV.Inputs[Flat File Destination Input].ExternalColumns[Correo]"
+                          codePage="1252"
+                          dataType="str"
+                          length="150"
+                          name="Correo" />
+                        <externalMetadataColumn
+                          refId="Package\Cargas\DFT_Clientes\ErroresClientes CSV.Inputs[Flat File Destination Input].ExternalColumns[Telefono]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Telefono" />
+                        <externalMetadataColumn
+                          refId="Package\Cargas\DFT_Clientes\ErroresClientes CSV.Inputs[Flat File Destination Input].ExternalColumns[Ciudad]"
+                          codePage="1252"
+                          dataType="str"
+                          length="100"
+                          name="Ciudad" />
+                        <externalMetadataColumn
+                          refId="Package\Cargas\DFT_Clientes\ErroresClientes CSV.Inputs[Flat File Destination Input].ExternalColumns[Estado]"
+                          codePage="1252"
+                          dataType="str"
+                          length="100"
+                          name="Estado" />
+                        <externalMetadataColumn
+                          refId="Package\Cargas\DFT_Clientes\ErroresClientes CSV.Inputs[Flat File Destination Input].ExternalColumns[Pais]"
+                          codePage="1252"
+                          dataType="str"
+                          length="100"
+                          name="Pais" />
+                        <externalMetadataColumn
+                          refId="Package\Cargas\DFT_Clientes\ErroresClientes CSV.Inputs[Flat File Destination Input].ExternalColumns[Activo]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Activo" />
+                        <externalMetadataColumn
+                          refId="Package\Cargas\DFT_Clientes\ErroresClientes CSV.Inputs[Flat File Destination Input].ExternalColumns[FechaRegistro]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="FechaRegistro" />
+                        <externalMetadataColumn
+                          refId="Package\Cargas\DFT_Clientes\ErroresClientes CSV.Inputs[Flat File Destination Input].ExternalColumns[MotivoRechazo]"
+                          codePage="1252"
+                          dataType="str"
+                          length="500"
+                          name="MotivoRechazo" />
+                        <externalMetadataColumn
+                          refId="Package\Cargas\DFT_Clientes\ErroresClientes CSV.Inputs[Flat File Destination Input].ExternalColumns[NombreFlujo]"
+                          codePage="1252"
+                          dataType="str"
+                          length="100"
+                          name="NombreFlujo" />
+                        <externalMetadataColumn
+                          refId="Package\Cargas\DFT_Clientes\ErroresClientes CSV.Inputs[Flat File Destination Input].ExternalColumns[ArchivoOrigen]"
+                          codePage="1252"
+                          dataType="str"
+                          length="150"
+                          name="ArchivoOrigen" />
+                        <externalMetadataColumn
+                          refId="Package\Cargas\DFT_Clientes\ErroresClientes CSV.Inputs[Flat File Destination Input].ExternalColumns[NombrePaquete]"
+                          codePage="1252"
+                          dataType="str"
+                          length="100"
+                          name="NombrePaquete" />
+                        <externalMetadataColumn
+                          refId="Package\Cargas\DFT_Clientes\ErroresClientes CSV.Inputs[Flat File Destination Input].ExternalColumns[FilaOrigen]"
+                          codePage="1252"
+                          dataType="str"
+                          length="1000"
+                          name="FilaOrigen" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                </component>
+                <component
                   refId="Package\Cargas\DFT_Clientes\Filtrar clientes"
                   componentClassID="Microsoft.ConditionalSplit"
                   contactInfo="Conditional Split;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
@@ -1725,6 +2456,44 @@
                           name="ErrorColumn"
                           specialFlags="2" />
                       </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Cargas\DFT_Clientes\MC Errores Cli"
+                  componentClassID="Microsoft.Multicast"
+                  contactInfo="Multicast;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+                  description="Distributes every input row to every row in one or more outputs. For example, branch your data flow to make a copy of data so that some values can be masked before sharing with external partners."
+                  name="MC Errores Cli">
+                  <inputs>
+                    <input
+                      refId="Package\Cargas\DFT_Clientes\MC Errores Cli.Inputs[Multicast Input 1]"
+                      name="Multicast Input 1">
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Cargas\DFT_Clientes\MC Errores Cli.Outputs[Multicast Output 1]"
+                      deleteOutputOnPathDetached="true"
+                      name="Multicast Output 1"
+                      synchronousInputId="Package\Cargas\DFT_Clientes\MC Errores Cli.Inputs[Multicast Input 1]">
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Cargas\DFT_Clientes\MC Errores Cli.Outputs[Multicast Output 2]"
+                      deleteOutputOnPathDetached="true"
+                      name="Multicast Output 2"
+                      synchronousInputId="Package\Cargas\DFT_Clientes\MC Errores Cli.Inputs[Multicast Input 1]">
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Cargas\DFT_Clientes\MC Errores Cli.Outputs[Multicast Output 3]"
+                      dangling="true"
+                      deleteOutputOnPathDetached="true"
+                      name="Multicast Output 3"
+                      synchronousInputId="Package\Cargas\DFT_Clientes\MC Errores Cli.Inputs[Multicast Input 1]">
                       <externalMetadataColumns />
                     </output>
                   </outputs>
@@ -3181,6 +3950,16 @@
                   name="Invalidos"
                   startId="Package\Cargas\DFT_Clientes\Filtrar clientes.Outputs[Invalidos]" />
                 <path
+                  refId="Package\Cargas\DFT_Clientes.Paths[Multicast Output 1]"
+                  endId="Package\Cargas\DFT_Clientes\LogErrores.Inputs[OLE DB Destination Input]"
+                  name="Multicast Output 1"
+                  startId="Package\Cargas\DFT_Clientes\MC Errores Cli.Outputs[Multicast Output 1]" />
+                <path
+                  refId="Package\Cargas\DFT_Clientes.Paths[Multicast Output 2]"
+                  endId="Package\Cargas\DFT_Clientes\ErroresClientes CSV.Inputs[Flat File Destination Input]"
+                  name="Multicast Output 2"
+                  startId="Package\Cargas\DFT_Clientes\MC Errores Cli.Outputs[Multicast Output 2]" />
+                <path
                   refId="Package\Cargas\DFT_Clientes.Paths[Row Count Output 1]"
                   endId="Package\Cargas\DFT_Clientes\Quitar duplicados.Inputs[Sort Input]"
                   name="Row Count Output 1"
@@ -3192,7 +3971,7 @@
                   startId="Package\Cargas\DFT_Clientes\RC Insertados Cli.Outputs[Row Count Output 1]" />
                 <path
                   refId="Package\Cargas\DFT_Clientes.Paths[Row Count Output 12]"
-                  endId="Package\Cargas\DFT_Clientes\LogErrores.Inputs[OLE DB Destination Input]"
+                  endId="Package\Cargas\DFT_Clientes\MC Errores Cli.Inputs[Multicast Input 1]"
                   name="Row Count Output 1"
                   startId="Package\Cargas\DFT_Clientes\RC Errores Cli.Outputs[Row Count Output 1]" />
                 <path
@@ -4675,6 +5454,178 @@
                   </outputs>
                 </component>
                 <component
+                  refId="Package\Cargas\DFT_Productos\ErroresProductos CSV"
+                  componentClassID="Microsoft.FlatFileDestination"
+                  contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                  description="Flat File Destination"
+                  localeId="2058"
+                  name="ErroresProductos CSV">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      description="Specifies whether the data will overwrite or append to the destination file."
+                      name="Overwrite">true</property>
+                    <property
+                      dataType="System.Null"
+                      description="Specifies the text to write to the destination file before any data is written."
+                      expressionType="Notify"
+                      name="Header" />
+                    <property
+                      dataType="System.Boolean"
+                      description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
+                      name="EscapeQualifier">false</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Cargas\DFT_Productos\ErroresProductos CSV.Connections[FlatFileConnection]"
+                      connectionManagerID="Package.ConnectionManagers[cm_ErroresProductos]"
+                      connectionManagerRefId="Package.ConnectionManagers[cm_ErroresProductos]"
+                      name="FlatFileConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Cargas\DFT_Productos\ErroresProductos CSV.Inputs[Flat File Destination Input]"
+                      hasSideEffects="true"
+                      name="Flat File Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Cargas\DFT_Productos\ErroresProductos CSV.Inputs[Flat File Destination Input].Columns[Activo]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Activo"
+                          externalMetadataColumnId="Package\Cargas\DFT_Productos\ErroresProductos CSV.Inputs[Flat File Destination Input].ExternalColumns[Activo]"
+                          lineageId="Package\Cargas\DFT_Productos\Unir Errores Productos.Outputs[Union All Output 1].Columns[Activo]" />
+                        <inputColumn
+                          refId="Package\Cargas\DFT_Productos\ErroresProductos CSV.Inputs[Flat File Destination Input].Columns[MotivoRechazo]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="500"
+                          cachedName="MotivoRechazo"
+                          externalMetadataColumnId="Package\Cargas\DFT_Productos\ErroresProductos CSV.Inputs[Flat File Destination Input].ExternalColumns[MotivoRechazo]"
+                          lineageId="Package\Cargas\DFT_Productos\Unir Errores Productos.Outputs[Union All Output 1].Columns[MotivoRechazo]" />
+                        <inputColumn
+                          refId="Package\Cargas\DFT_Productos\ErroresProductos CSV.Inputs[Flat File Destination Input].Columns[NombreFlujo]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="100"
+                          cachedName="NombreFlujo"
+                          externalMetadataColumnId="Package\Cargas\DFT_Productos\ErroresProductos CSV.Inputs[Flat File Destination Input].ExternalColumns[NombreFlujo]"
+                          lineageId="Package\Cargas\DFT_Productos\Unir Errores Productos.Outputs[Union All Output 1].Columns[NombreFlujo]" />
+                        <inputColumn
+                          refId="Package\Cargas\DFT_Productos\ErroresProductos CSV.Inputs[Flat File Destination Input].Columns[ArchivoOrigen]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="150"
+                          cachedName="ArchivoOrigen"
+                          externalMetadataColumnId="Package\Cargas\DFT_Productos\ErroresProductos CSV.Inputs[Flat File Destination Input].ExternalColumns[ArchivoOrigen]"
+                          lineageId="Package\Cargas\DFT_Productos\Unir Errores Productos.Outputs[Union All Output 1].Columns[ArchivoOrigen]" />
+                        <inputColumn
+                          refId="Package\Cargas\DFT_Productos\ErroresProductos CSV.Inputs[Flat File Destination Input].Columns[NombrePaquete]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="100"
+                          cachedName="NombrePaquete"
+                          externalMetadataColumnId="Package\Cargas\DFT_Productos\ErroresProductos CSV.Inputs[Flat File Destination Input].ExternalColumns[NombrePaquete]"
+                          lineageId="Package\Cargas\DFT_Productos\Unir Errores Productos.Outputs[Union All Output 1].Columns[NombrePaquete]" />
+                        <inputColumn
+                          refId="Package\Cargas\DFT_Productos\ErroresProductos CSV.Inputs[Flat File Destination Input].Columns[FilaOrigen]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="1000"
+                          cachedName="FilaOrigen"
+                          externalMetadataColumnId="Package\Cargas\DFT_Productos\ErroresProductos CSV.Inputs[Flat File Destination Input].ExternalColumns[FilaOrigen]"
+                          lineageId="Package\Cargas\DFT_Productos\Unir Errores Productos.Outputs[Union All Output 1].Columns[FilaOrigen]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Cargas\DFT_Productos\ErroresProductos CSV.Inputs[Flat File Destination Input].ExternalColumns[Activo]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Activo" />
+                        <externalMetadataColumn
+                          refId="Package\Cargas\DFT_Productos\ErroresProductos CSV.Inputs[Flat File Destination Input].ExternalColumns[MotivoRechazo]"
+                          codePage="1252"
+                          dataType="str"
+                          length="500"
+                          name="MotivoRechazo" />
+                        <externalMetadataColumn
+                          refId="Package\Cargas\DFT_Productos\ErroresProductos CSV.Inputs[Flat File Destination Input].ExternalColumns[NombreFlujo]"
+                          codePage="1252"
+                          dataType="str"
+                          length="100"
+                          name="NombreFlujo" />
+                        <externalMetadataColumn
+                          refId="Package\Cargas\DFT_Productos\ErroresProductos CSV.Inputs[Flat File Destination Input].ExternalColumns[ArchivoOrigen]"
+                          codePage="1252"
+                          dataType="str"
+                          length="150"
+                          name="ArchivoOrigen" />
+                        <externalMetadataColumn
+                          refId="Package\Cargas\DFT_Productos\ErroresProductos CSV.Inputs[Flat File Destination Input].ExternalColumns[NombrePaquete]"
+                          codePage="1252"
+                          dataType="str"
+                          length="100"
+                          name="NombrePaquete" />
+                        <externalMetadataColumn
+                          refId="Package\Cargas\DFT_Productos\ErroresProductos CSV.Inputs[Flat File Destination Input].ExternalColumns[FilaOrigen]"
+                          codePage="1252"
+                          dataType="str"
+                          length="1000"
+                          name="FilaOrigen" />
+                        <externalMetadataColumn
+                          refId="Package\Cargas\DFT_Productos\ErroresProductos CSV.Inputs[Flat File Destination Input].ExternalColumns[IdProducto]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="IdProducto" />
+                        <externalMetadataColumn
+                          refId="Package\Cargas\DFT_Productos\ErroresProductos CSV.Inputs[Flat File Destination Input].ExternalColumns[NombreProducto]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="NombreProducto" />
+                        <externalMetadataColumn
+                          refId="Package\Cargas\DFT_Productos\ErroresProductos CSV.Inputs[Flat File Destination Input].ExternalColumns[Categoria]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Categoria" />
+                        <externalMetadataColumn
+                          refId="Package\Cargas\DFT_Productos\ErroresProductos CSV.Inputs[Flat File Destination Input].ExternalColumns[Precio]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Precio" />
+                        <externalMetadataColumn
+                          refId="Package\Cargas\DFT_Productos\ErroresProductos CSV.Inputs[Flat File Destination Input].ExternalColumns[Costo]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Costo" />
+                        <externalMetadataColumn
+                          refId="Package\Cargas\DFT_Productos\ErroresProductos CSV.Inputs[Flat File Destination Input].ExternalColumns[IdProducto_int]"
+                          dataType="i4"
+                          name="IdProducto_int" />
+                        <externalMetadataColumn
+                          refId="Package\Cargas\DFT_Productos\ErroresProductos CSV.Inputs[Flat File Destination Input].ExternalColumns[Precio_dec]"
+                          dataType="numeric"
+                          name="Precio_dec"
+                          precision="12"
+                          scale="2" />
+                        <externalMetadataColumn
+                          refId="Package\Cargas\DFT_Productos\ErroresProductos CSV.Inputs[Flat File Destination Input].ExternalColumns[Costo_dec]"
+                          dataType="numeric"
+                          name="Costo_dec"
+                          precision="12"
+                          scale="2" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                </component>
+                <component
                   refId="Package\Cargas\DFT_Productos\Filtrar productos"
                   componentClassID="Microsoft.ConditionalSplit"
                   contactInfo="Conditional Split;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
@@ -5147,6 +6098,44 @@
                           name="ErrorColumn"
                           specialFlags="2" />
                       </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Cargas\DFT_Productos\MC Errores Prod"
+                  componentClassID="Microsoft.Multicast"
+                  contactInfo="Multicast;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+                  description="Distributes every input row to every row in one or more outputs. For example, branch your data flow to make a copy of data so that some values can be masked before sharing with external partners."
+                  name="MC Errores Prod">
+                  <inputs>
+                    <input
+                      refId="Package\Cargas\DFT_Productos\MC Errores Prod.Inputs[Multicast Input 1]"
+                      name="Multicast Input 1">
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Cargas\DFT_Productos\MC Errores Prod.Outputs[Multicast Output 1]"
+                      deleteOutputOnPathDetached="true"
+                      name="Multicast Output 1"
+                      synchronousInputId="Package\Cargas\DFT_Productos\MC Errores Prod.Inputs[Multicast Input 1]">
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Cargas\DFT_Productos\MC Errores Prod.Outputs[Multicast Output 2]"
+                      deleteOutputOnPathDetached="true"
+                      name="Multicast Output 2"
+                      synchronousInputId="Package\Cargas\DFT_Productos\MC Errores Prod.Inputs[Multicast Input 1]">
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Cargas\DFT_Productos\MC Errores Prod.Outputs[Multicast Output 3]"
+                      dangling="true"
+                      deleteOutputOnPathDetached="true"
+                      name="Multicast Output 3"
+                      synchronousInputId="Package\Cargas\DFT_Productos\MC Errores Prod.Inputs[Multicast Input 1]">
                       <externalMetadataColumns />
                     </output>
                   </outputs>
@@ -6887,6 +7876,16 @@ where [refTable].[Categoria] = ?</property>
                   name="Lookup No Match Output"
                   startId="Package\Cargas\DFT_Productos\Validar categoria.Outputs[Lookup No Match Output]" />
                 <path
+                  refId="Package\Cargas\DFT_Productos.Paths[Multicast Output 1]"
+                  endId="Package\Cargas\DFT_Productos\LogErrores Productos.Inputs[OLE DB Destination Input]"
+                  name="Multicast Output 1"
+                  startId="Package\Cargas\DFT_Productos\MC Errores Prod.Outputs[Multicast Output 1]" />
+                <path
+                  refId="Package\Cargas\DFT_Productos.Paths[Multicast Output 2]"
+                  endId="Package\Cargas\DFT_Productos\ErroresProductos CSV.Inputs[Flat File Destination Input]"
+                  name="Multicast Output 2"
+                  startId="Package\Cargas\DFT_Productos\MC Errores Prod.Outputs[Multicast Output 2]" />
+                <path
                   refId="Package\Cargas\DFT_Productos.Paths[PrecioInvalido]"
                   endId="Package\Cargas\DFT_Productos\Err Precio.Inputs[Derived Column Input]"
                   name="PrecioInvalido"
@@ -6903,7 +7902,7 @@ where [refTable].[Categoria] = ?</property>
                   startId="Package\Cargas\DFT_Productos\RC Insertados Prod.Outputs[Row Count Output 1]" />
                 <path
                   refId="Package\Cargas\DFT_Productos.Paths[Row Count Output 12]"
-                  endId="Package\Cargas\DFT_Productos\LogErrores Productos.Inputs[OLE DB Destination Input]"
+                  endId="Package\Cargas\DFT_Productos\MC Errores Prod.Inputs[Multicast Input 1]"
                   name="Row Count Output 1"
                   startId="Package\Cargas\DFT_Productos\RC Errores Prod.Outputs[Row Count Output 1]" />
                 <path
@@ -8777,6 +9776,280 @@ where [refTable].[IdProductoOrigen] = ?</property>
                   </outputs>
                 </component>
                 <component
+                  refId="Package\Cargas\DFT_Ventas\ErroresVentas CSV"
+                  componentClassID="Microsoft.FlatFileDestination"
+                  contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                  description="Flat File Destination"
+                  localeId="2058"
+                  name="ErroresVentas CSV">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      description="Specifies whether the data will overwrite or append to the destination file."
+                      name="Overwrite">true</property>
+                    <property
+                      dataType="System.Null"
+                      description="Specifies the text to write to the destination file before any data is written."
+                      expressionType="Notify"
+                      name="Header" />
+                    <property
+                      dataType="System.Boolean"
+                      description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
+                      name="EscapeQualifier">false</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Cargas\DFT_Ventas\ErroresVentas CSV.Connections[FlatFileConnection]"
+                      connectionManagerID="Package.ConnectionManagers[cm_ErroresVentas]"
+                      connectionManagerRefId="Package.ConnectionManagers[cm_ErroresVentas]"
+                      name="FlatFileConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Cargas\DFT_Ventas\ErroresVentas CSV.Inputs[Flat File Destination Input]"
+                      hasSideEffects="true"
+                      name="Flat File Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Cargas\DFT_Ventas\ErroresVentas CSV.Inputs[Flat File Destination Input].Columns[IdVenta]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="IdVenta"
+                          externalMetadataColumnId="Package\Cargas\DFT_Ventas\ErroresVentas CSV.Inputs[Flat File Destination Input].ExternalColumns[IdVenta]"
+                          lineageId="Package\Cargas\DFT_Ventas\Unir errores ventas.Outputs[Union All Output 1].Columns[IdVenta]" />
+                        <inputColumn
+                          refId="Package\Cargas\DFT_Ventas\ErroresVentas CSV.Inputs[Flat File Destination Input].Columns[IdCliente]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="IdCliente"
+                          externalMetadataColumnId="Package\Cargas\DFT_Ventas\ErroresVentas CSV.Inputs[Flat File Destination Input].ExternalColumns[IdCliente]"
+                          lineageId="Package\Cargas\DFT_Ventas\Unir errores ventas.Outputs[Union All Output 1].Columns[IdCliente]" />
+                        <inputColumn
+                          refId="Package\Cargas\DFT_Ventas\ErroresVentas CSV.Inputs[Flat File Destination Input].Columns[IdProducto]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="IdProducto"
+                          externalMetadataColumnId="Package\Cargas\DFT_Ventas\ErroresVentas CSV.Inputs[Flat File Destination Input].ExternalColumns[IdProducto]"
+                          lineageId="Package\Cargas\DFT_Ventas\Unir errores ventas.Outputs[Union All Output 1].Columns[IdProducto]" />
+                        <inputColumn
+                          refId="Package\Cargas\DFT_Ventas\ErroresVentas CSV.Inputs[Flat File Destination Input].Columns[Cantidad]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Cantidad"
+                          externalMetadataColumnId="Package\Cargas\DFT_Ventas\ErroresVentas CSV.Inputs[Flat File Destination Input].ExternalColumns[Cantidad]"
+                          lineageId="Package\Cargas\DFT_Ventas\Unir errores ventas.Outputs[Union All Output 1].Columns[Cantidad]" />
+                        <inputColumn
+                          refId="Package\Cargas\DFT_Ventas\ErroresVentas CSV.Inputs[Flat File Destination Input].Columns[PrecioUnitario]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="PrecioUnitario"
+                          externalMetadataColumnId="Package\Cargas\DFT_Ventas\ErroresVentas CSV.Inputs[Flat File Destination Input].ExternalColumns[PrecioUnitario]"
+                          lineageId="Package\Cargas\DFT_Ventas\Unir errores ventas.Outputs[Union All Output 1].Columns[PrecioUnitario]" />
+                        <inputColumn
+                          refId="Package\Cargas\DFT_Ventas\ErroresVentas CSV.Inputs[Flat File Destination Input].Columns[FechaVenta]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="FechaVenta"
+                          externalMetadataColumnId="Package\Cargas\DFT_Ventas\ErroresVentas CSV.Inputs[Flat File Destination Input].ExternalColumns[FechaVenta]"
+                          lineageId="Package\Cargas\DFT_Ventas\Unir errores ventas.Outputs[Union All Output 1].Columns[FechaVenta]" />
+                        <inputColumn
+                          refId="Package\Cargas\DFT_Ventas\ErroresVentas CSV.Inputs[Flat File Destination Input].Columns[Sucursal]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Sucursal"
+                          externalMetadataColumnId="Package\Cargas\DFT_Ventas\ErroresVentas CSV.Inputs[Flat File Destination Input].ExternalColumns[Sucursal]"
+                          lineageId="Package\Cargas\DFT_Ventas\Unir errores ventas.Outputs[Union All Output 1].Columns[Sucursal]" />
+                        <inputColumn
+                          refId="Package\Cargas\DFT_Ventas\ErroresVentas CSV.Inputs[Flat File Destination Input].Columns[IdVenta_int]"
+                          cachedDataType="i4"
+                          cachedName="IdVenta_int"
+                          externalMetadataColumnId="Package\Cargas\DFT_Ventas\ErroresVentas CSV.Inputs[Flat File Destination Input].ExternalColumns[IdVenta_int]"
+                          lineageId="Package\Cargas\DFT_Ventas\Unir errores ventas.Outputs[Union All Output 1].Columns[IdVenta_int]" />
+                        <inputColumn
+                          refId="Package\Cargas\DFT_Ventas\ErroresVentas CSV.Inputs[Flat File Destination Input].Columns[IdCliente_int]"
+                          cachedDataType="i4"
+                          cachedName="IdCliente_int"
+                          externalMetadataColumnId="Package\Cargas\DFT_Ventas\ErroresVentas CSV.Inputs[Flat File Destination Input].ExternalColumns[IdCliente_int]"
+                          lineageId="Package\Cargas\DFT_Ventas\Unir errores ventas.Outputs[Union All Output 1].Columns[IdCliente_int]" />
+                        <inputColumn
+                          refId="Package\Cargas\DFT_Ventas\ErroresVentas CSV.Inputs[Flat File Destination Input].Columns[IdProducto_int]"
+                          cachedDataType="i4"
+                          cachedName="IdProducto_int"
+                          externalMetadataColumnId="Package\Cargas\DFT_Ventas\ErroresVentas CSV.Inputs[Flat File Destination Input].ExternalColumns[IdProducto_int]"
+                          lineageId="Package\Cargas\DFT_Ventas\Unir errores ventas.Outputs[Union All Output 1].Columns[IdProducto_int]" />
+                        <inputColumn
+                          refId="Package\Cargas\DFT_Ventas\ErroresVentas CSV.Inputs[Flat File Destination Input].Columns[Cantidad_int]"
+                          cachedDataType="i4"
+                          cachedName="Cantidad_int"
+                          externalMetadataColumnId="Package\Cargas\DFT_Ventas\ErroresVentas CSV.Inputs[Flat File Destination Input].ExternalColumns[Cantidad_int]"
+                          lineageId="Package\Cargas\DFT_Ventas\Unir errores ventas.Outputs[Union All Output 1].Columns[Cantidad_int]" />
+                        <inputColumn
+                          refId="Package\Cargas\DFT_Ventas\ErroresVentas CSV.Inputs[Flat File Destination Input].Columns[PrecioUnitario_dec]"
+                          cachedDataType="numeric"
+                          cachedName="PrecioUnitario_dec"
+                          cachedPrecision="12"
+                          cachedScale="2"
+                          externalMetadataColumnId="Package\Cargas\DFT_Ventas\ErroresVentas CSV.Inputs[Flat File Destination Input].ExternalColumns[PrecioUnitario_dec]"
+                          lineageId="Package\Cargas\DFT_Ventas\Unir errores ventas.Outputs[Union All Output 1].Columns[PrecioUnitario_dec]" />
+                        <inputColumn
+                          refId="Package\Cargas\DFT_Ventas\ErroresVentas CSV.Inputs[Flat File Destination Input].Columns[FechaVenta_date]"
+                          cachedDataType="dbDate"
+                          cachedName="FechaVenta_date"
+                          externalMetadataColumnId="Package\Cargas\DFT_Ventas\ErroresVentas CSV.Inputs[Flat File Destination Input].ExternalColumns[FechaVenta_date]"
+                          lineageId="Package\Cargas\DFT_Ventas\Unir errores ventas.Outputs[Union All Output 1].Columns[FechaVenta_date]" />
+                        <inputColumn
+                          refId="Package\Cargas\DFT_Ventas\ErroresVentas CSV.Inputs[Flat File Destination Input].Columns[MotivoRechazo]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="500"
+                          cachedName="MotivoRechazo"
+                          externalMetadataColumnId="Package\Cargas\DFT_Ventas\ErroresVentas CSV.Inputs[Flat File Destination Input].ExternalColumns[MotivoRechazo]"
+                          lineageId="Package\Cargas\DFT_Ventas\Unir errores ventas.Outputs[Union All Output 1].Columns[MotivoRechazo]" />
+                        <inputColumn
+                          refId="Package\Cargas\DFT_Ventas\ErroresVentas CSV.Inputs[Flat File Destination Input].Columns[NombreFlujo]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="100"
+                          cachedName="NombreFlujo"
+                          externalMetadataColumnId="Package\Cargas\DFT_Ventas\ErroresVentas CSV.Inputs[Flat File Destination Input].ExternalColumns[NombreFlujo]"
+                          lineageId="Package\Cargas\DFT_Ventas\Unir errores ventas.Outputs[Union All Output 1].Columns[NombreFlujo]" />
+                        <inputColumn
+                          refId="Package\Cargas\DFT_Ventas\ErroresVentas CSV.Inputs[Flat File Destination Input].Columns[ArchivoOrigen]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="150"
+                          cachedName="ArchivoOrigen"
+                          externalMetadataColumnId="Package\Cargas\DFT_Ventas\ErroresVentas CSV.Inputs[Flat File Destination Input].ExternalColumns[ArchivoOrigen]"
+                          lineageId="Package\Cargas\DFT_Ventas\Unir errores ventas.Outputs[Union All Output 1].Columns[ArchivoOrigen]" />
+                        <inputColumn
+                          refId="Package\Cargas\DFT_Ventas\ErroresVentas CSV.Inputs[Flat File Destination Input].Columns[NombrePaquete]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="100"
+                          cachedName="NombrePaquete"
+                          externalMetadataColumnId="Package\Cargas\DFT_Ventas\ErroresVentas CSV.Inputs[Flat File Destination Input].ExternalColumns[NombrePaquete]"
+                          lineageId="Package\Cargas\DFT_Ventas\Unir errores ventas.Outputs[Union All Output 1].Columns[NombrePaquete]" />
+                        <inputColumn
+                          refId="Package\Cargas\DFT_Ventas\ErroresVentas CSV.Inputs[Flat File Destination Input].Columns[FilaOrigen]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="1000"
+                          cachedName="FilaOrigen"
+                          externalMetadataColumnId="Package\Cargas\DFT_Ventas\ErroresVentas CSV.Inputs[Flat File Destination Input].ExternalColumns[FilaOrigen]"
+                          lineageId="Package\Cargas\DFT_Ventas\Unir errores ventas.Outputs[Union All Output 1].Columns[FilaOrigen]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Cargas\DFT_Ventas\ErroresVentas CSV.Inputs[Flat File Destination Input].ExternalColumns[IdVenta]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="IdVenta" />
+                        <externalMetadataColumn
+                          refId="Package\Cargas\DFT_Ventas\ErroresVentas CSV.Inputs[Flat File Destination Input].ExternalColumns[IdCliente]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="IdCliente" />
+                        <externalMetadataColumn
+                          refId="Package\Cargas\DFT_Ventas\ErroresVentas CSV.Inputs[Flat File Destination Input].ExternalColumns[IdProducto]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="IdProducto" />
+                        <externalMetadataColumn
+                          refId="Package\Cargas\DFT_Ventas\ErroresVentas CSV.Inputs[Flat File Destination Input].ExternalColumns[Cantidad]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Cantidad" />
+                        <externalMetadataColumn
+                          refId="Package\Cargas\DFT_Ventas\ErroresVentas CSV.Inputs[Flat File Destination Input].ExternalColumns[PrecioUnitario]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="PrecioUnitario" />
+                        <externalMetadataColumn
+                          refId="Package\Cargas\DFT_Ventas\ErroresVentas CSV.Inputs[Flat File Destination Input].ExternalColumns[FechaVenta]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="FechaVenta" />
+                        <externalMetadataColumn
+                          refId="Package\Cargas\DFT_Ventas\ErroresVentas CSV.Inputs[Flat File Destination Input].ExternalColumns[Sucursal]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Sucursal" />
+                        <externalMetadataColumn
+                          refId="Package\Cargas\DFT_Ventas\ErroresVentas CSV.Inputs[Flat File Destination Input].ExternalColumns[IdVenta_int]"
+                          dataType="i4"
+                          name="IdVenta_int" />
+                        <externalMetadataColumn
+                          refId="Package\Cargas\DFT_Ventas\ErroresVentas CSV.Inputs[Flat File Destination Input].ExternalColumns[IdCliente_int]"
+                          dataType="i4"
+                          name="IdCliente_int" />
+                        <externalMetadataColumn
+                          refId="Package\Cargas\DFT_Ventas\ErroresVentas CSV.Inputs[Flat File Destination Input].ExternalColumns[IdProducto_int]"
+                          dataType="i4"
+                          name="IdProducto_int" />
+                        <externalMetadataColumn
+                          refId="Package\Cargas\DFT_Ventas\ErroresVentas CSV.Inputs[Flat File Destination Input].ExternalColumns[Cantidad_int]"
+                          dataType="i4"
+                          name="Cantidad_int" />
+                        <externalMetadataColumn
+                          refId="Package\Cargas\DFT_Ventas\ErroresVentas CSV.Inputs[Flat File Destination Input].ExternalColumns[PrecioUnitario_dec]"
+                          dataType="numeric"
+                          name="PrecioUnitario_dec"
+                          precision="12"
+                          scale="2" />
+                        <externalMetadataColumn
+                          refId="Package\Cargas\DFT_Ventas\ErroresVentas CSV.Inputs[Flat File Destination Input].ExternalColumns[FechaVenta_date]"
+                          dataType="dbDate"
+                          name="FechaVenta_date" />
+                        <externalMetadataColumn
+                          refId="Package\Cargas\DFT_Ventas\ErroresVentas CSV.Inputs[Flat File Destination Input].ExternalColumns[MotivoRechazo]"
+                          codePage="1252"
+                          dataType="str"
+                          length="500"
+                          name="MotivoRechazo" />
+                        <externalMetadataColumn
+                          refId="Package\Cargas\DFT_Ventas\ErroresVentas CSV.Inputs[Flat File Destination Input].ExternalColumns[NombreFlujo]"
+                          codePage="1252"
+                          dataType="str"
+                          length="100"
+                          name="NombreFlujo" />
+                        <externalMetadataColumn
+                          refId="Package\Cargas\DFT_Ventas\ErroresVentas CSV.Inputs[Flat File Destination Input].ExternalColumns[ArchivoOrigen]"
+                          codePage="1252"
+                          dataType="str"
+                          length="150"
+                          name="ArchivoOrigen" />
+                        <externalMetadataColumn
+                          refId="Package\Cargas\DFT_Ventas\ErroresVentas CSV.Inputs[Flat File Destination Input].ExternalColumns[NombrePaquete]"
+                          codePage="1252"
+                          dataType="str"
+                          length="100"
+                          name="NombrePaquete" />
+                        <externalMetadataColumn
+                          refId="Package\Cargas\DFT_Ventas\ErroresVentas CSV.Inputs[Flat File Destination Input].ExternalColumns[FilaOrigen]"
+                          codePage="1252"
+                          dataType="str"
+                          length="1000"
+                          name="FilaOrigen" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                </component>
+                <component
                   refId="Package\Cargas\DFT_Ventas\FactVentas"
                   componentClassID="Microsoft.OLEDBDestination"
                   contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
@@ -9307,6 +10580,44 @@ where [refTable].[IdProductoOrigen] = ?</property>
                           name="ErrorColumn"
                           specialFlags="2" />
                       </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Cargas\DFT_Ventas\MC Errores Ven"
+                  componentClassID="Microsoft.Multicast"
+                  contactInfo="Multicast;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+                  description="Distributes every input row to every row in one or more outputs. For example, branch your data flow to make a copy of data so that some values can be masked before sharing with external partners."
+                  name="MC Errores Ven">
+                  <inputs>
+                    <input
+                      refId="Package\Cargas\DFT_Ventas\MC Errores Ven.Inputs[Multicast Input 1]"
+                      name="Multicast Input 1">
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Cargas\DFT_Ventas\MC Errores Ven.Outputs[Multicast Output 1]"
+                      deleteOutputOnPathDetached="true"
+                      name="Multicast Output 1"
+                      synchronousInputId="Package\Cargas\DFT_Ventas\MC Errores Ven.Inputs[Multicast Input 1]">
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Cargas\DFT_Ventas\MC Errores Ven.Outputs[Multicast Output 2]"
+                      deleteOutputOnPathDetached="true"
+                      name="Multicast Output 2"
+                      synchronousInputId="Package\Cargas\DFT_Ventas\MC Errores Ven.Inputs[Multicast Input 1]">
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Cargas\DFT_Ventas\MC Errores Ven.Outputs[Multicast Output 3]"
+                      dangling="true"
+                      deleteOutputOnPathDetached="true"
+                      name="Multicast Output 3"
+                      synchronousInputId="Package\Cargas\DFT_Ventas\MC Errores Ven.Inputs[Multicast Input 1]">
                       <externalMetadataColumns />
                     </output>
                   </outputs>
@@ -11127,12 +12438,12 @@ where [refTable].[IdProductoOrigen] = ?</property>
                   name="Flat File Source Output"
                   startId="Package\Cargas\DFT_Ventas\CSV_Ventas.Outputs[Flat File Source Output]" />
                 <path
-                  refId="Package\Cargas\DFT_Ventas.Paths[Lookup Match Output]"
+                  refId="Package\Cargas\DFT_Ventas.Paths[Lookup Match Output1]"
                   endId="Package\Cargas\DFT_Ventas\Buscar producto.Inputs[Lookup Input]"
                   name="Lookup Match Output"
                   startId="Package\Cargas\DFT_Ventas\Buscar cliente.Outputs[Lookup Match Output]" />
                 <path
-                  refId="Package\Cargas\DFT_Ventas.Paths[Lookup Match Output1]"
+                  refId="Package\Cargas\DFT_Ventas.Paths[Lookup Match Output]"
                   endId="Package\Cargas\DFT_Ventas\Calcular metricas.Inputs[Derived Column Input]"
                   name="Lookup Match Output"
                   startId="Package\Cargas\DFT_Ventas\Buscar producto.Outputs[Lookup Match Output]" />
@@ -11146,6 +12457,16 @@ where [refTable].[IdProductoOrigen] = ?</property>
                   endId="Package\Cargas\DFT_Ventas\Err Producto.Inputs[Derived Column Input]"
                   name="Lookup No Match Output"
                   startId="Package\Cargas\DFT_Ventas\Buscar producto.Outputs[Lookup No Match Output]" />
+                <path
+                  refId="Package\Cargas\DFT_Ventas.Paths[Multicast Output 1]"
+                  endId="Package\Cargas\DFT_Ventas\LogErrores Ventas.Inputs[OLE DB Destination Input]"
+                  name="Multicast Output 1"
+                  startId="Package\Cargas\DFT_Ventas\MC Errores Ven.Outputs[Multicast Output 1]" />
+                <path
+                  refId="Package\Cargas\DFT_Ventas.Paths[Multicast Output 2]"
+                  endId="Package\Cargas\DFT_Ventas\ErroresVentas CSV.Inputs[Flat File Destination Input]"
+                  name="Multicast Output 2"
+                  startId="Package\Cargas\DFT_Ventas\MC Errores Ven.Outputs[Multicast Output 2]" />
                 <path
                   refId="Package\Cargas\DFT_Ventas.Paths[PrecioInvalido]"
                   endId="Package\Cargas\DFT_Ventas\Err PrecioVta.Inputs[Derived Column Input]"
@@ -11163,7 +12484,7 @@ where [refTable].[IdProductoOrigen] = ?</property>
                   startId="Package\Cargas\DFT_Ventas\RC Insertados Ven.Outputs[Row Count Output 1]" />
                 <path
                   refId="Package\Cargas\DFT_Ventas.Paths[Row Count Output 12]"
-                  endId="Package\Cargas\DFT_Ventas\LogErrores Ventas.Inputs[OLE DB Destination Input]"
+                  endId="Package\Cargas\DFT_Ventas\MC Errores Ven.Inputs[Multicast Input 1]"
                   name="Row Count Output 1"
                   startId="Package\Cargas\DFT_Ventas\RC Errores Ven.Outputs[Row Count Output 1]" />
                 <path
@@ -11220,7 +12541,7 @@ where [refTable].[IdProductoOrigen] = ?</property>
       <DTS:ObjectData>
         <ExecuteProcessData
           Executable="powershell.exe"
-          Arguments="-NoProfile -ExecutionPolicy Bypass -File &quot;C:\Users\al222\Workspace\Git\practicasAlmeida\Proyecto_ETL_UTVT\ssis\comprimir.ps1&quot; -Origen &quot;C:\Users\al222\Workspace\Git\practicasAlmeida\Proyecto_ETL_UTVT\data\procesados\&quot; -Zip &quot;C:\Users\al222\Workspace\Git\practicasAlmeida\Proyecto_ETL_UTVT\data\procesados\Procesados_20260707_221053.zip&quot;" />
+          Arguments="-NoProfile -ExecutionPolicy Bypass -File &quot;C:\Users\al222\Workspace\Git\practicasAlmeida\Proyecto_ETL_UTVT\ssis\comprimir.ps1&quot; -Origen &quot;C:\Users\al222\Workspace\Git\practicasAlmeida\Proyecto_ETL_UTVT\data\procesados\&quot; -Zip &quot;C:\Users\al222\Workspace\Git\practicasAlmeida\Proyecto_ETL_UTVT\data\procesados\Procesados_20260708_211423.zip&quot;" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -11353,35 +12674,14 @@ where [refTable].[IdProductoOrigen] = ?</property>
           Language="CSharp"
           ReadOnlyVariables="User::RutaEntrada">
           <ProjectItem
-            Name="Properties\AssemblyInfo.cs"
-            Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
-
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_9a860ebbec634cd8b84780a14163cff5")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ST_9a860ebbec634cd8b84780a14163cff5")]
-[assembly: AssemblyCopyright("Copyright @  2026")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
-
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+            Name="Properties\Settings.settings"
+            Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
           <ProjectItem
             Name="Properties\Resources.resx"
             Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -11782,14 +13082,35 @@ namespace ST_9a860ebbec634cd8b84780a14163cff5.Properties {
     }
 }]]></ProjectItem>
           <ProjectItem
-            Name="Properties\Settings.settings"
-            Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
-</SettingsFile>]]></ProjectItem>
+            Name="Properties\AssemblyInfo.cs"
+            Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_9a860ebbec634cd8b84780a14163cff5")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_9a860ebbec634cd8b84780a14163cff5")]
+[assembly: AssemblyCopyright("Copyright @  2026")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
           <ProjectItem
             Name="Properties\Resources.Designer.cs"
             Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
@@ -12349,45 +13670,395 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="123.2,41.6"
-          Id="Package\Cargas\DFT_Clientes\Limpieza"
-          TopLeft="301,237.93333328512" />
-        <NodeLayout
-          Size="148,41.6"
-          Id="Package\Cargas\DFT_Clientes\Filtrar clientes"
-          TopLeft="294,337.93333328512" />
-        <NodeLayout
-          Size="132.8,41.6"
-          Id="Package\Cargas\DFT_Clientes\DimCliente"
-          TopLeft="308.166666712198,624.259258311729" />
-        <NodeLayout
           Size="129.6,41.6"
           Id="Package\Cargas\DFT_Clientes\LogErrores"
-          TopLeft="95.0925873969625,605.459255744358" />
-        <NodeLayout
-          Size="156,41.6"
-          Id="Package\Cargas\DFT_Clientes\Motivo_Invalidos"
-          TopLeft="501.66663925681,341.799998318553" />
+          TopLeft="95.8501631131461,723.338042828718" />
         <NodeLayout
           Size="156,41.6"
           Id="Package\Cargas\DFT_Clientes\Motivo_Inactivos"
           TopLeft="101.666661111845,339.199998119672" />
         <NodeLayout
-          Size="164.8,41.6"
-          Id="Package\Cargas\DFT_Clientes\Quitar duplicados"
-          TopLeft="282,159.666666515999" />
+          Size="174.4,41.6"
+          Id="Package\Cargas\DFT_Clientes\ErroresClientes CSV"
+          TopLeft="243.939380611134,757.757573856428" />
         <NodeLayout
-          Size="150.4,41.6"
-          Id="Package\Cargas\DFT_Clientes\Convertir tipos"
-          TopLeft="300.333333151208,434.518518341066" />
+          Size="148,41.6"
+          Id="Package\Cargas\DFT_Clientes\Filtrar clientes"
+          TopLeft="294,337.93333328512" />
+        <NodeLayout
+          Size="141.6,41.6"
+          Id="Package\Cargas\DFT_Clientes\RC Leidos Cli"
+          TopLeft="309.166649774546,82.3333327607976" />
+        <NodeLayout
+          Size="146.4,41.6"
+          Id="Package\Cargas\DFT_Clientes\MC Errores Cli"
+          TopLeft="83.333328780201,594.666664979193" />
+        <NodeLayout
+          Size="160,41.6"
+          Id="Package\Cargas\DFT_Clientes\RC Insertados Cli"
+          TopLeft="303.240724172398,519.133329723345" />
+        <NodeLayout
+          Size="145.6,41.6"
+          Id="Package\Cargas\DFT_Clientes\RC Errores Cli"
+          TopLeft="99.9999945362411,512.296292733852" />
+        <NodeLayout
+          Size="148,41.6"
+          Id="Package\Cargas\DFT_Clientes\CSV_Clientes"
+          TopLeft="313.999999726812,0.0666669860813194" />
+        <NodeLayout
+          Size="156,41.6"
+          Id="Package\Cargas\DFT_Clientes\Motivo_Invalidos"
+          TopLeft="501.66663925681,341.799998318553" />
         <NodeLayout
           Size="171.2,41.6"
           Id="Package\Cargas\DFT_Clientes\Unir errores clientes"
           TopLeft="92.499994946023,416.199997956952" />
         <NodeLayout
-          Size="148,41.6"
-          Id="Package\Cargas\DFT_Clientes\CSV_Clientes"
-          TopLeft="313.999999726812,0.0666669860813194" />
+          Size="123.2,41.6"
+          Id="Package\Cargas\DFT_Clientes\Limpieza"
+          TopLeft="301,237.93333328512" />
+        <NodeLayout
+          Size="132.8,41.6"
+          Id="Package\Cargas\DFT_Clientes\DimCliente"
+          TopLeft="308.166666712198,624.259258311729" />
+        <NodeLayout
+          Size="150.4,41.6"
+          Id="Package\Cargas\DFT_Clientes\Convertir tipos"
+          TopLeft="300.333333151208,434.518518341066" />
+        <NodeLayout
+          Size="164.8,41.6"
+          Id="Package\Cargas\DFT_Clientes\Quitar duplicados"
+          TopLeft="282,159.666666515999" />
+        <EdgeLayout
+          Id="Package\Cargas\DFT_Clientes.Paths[Data Conversion Output]"
+          TopLeft="379.387028661803,476.118518341066">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,43.0148113822791"
+              Start="0,0"
+              End="0,35.5148113822791">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,35.5148113822791" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Cargas\DFT_Clientes.Paths[Validos]"
+          TopLeft="371.766666575604,379.53333328512">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,54.985185055946"
+              Start="0,0"
+              End="0,47.485185055946">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,47.485185055946" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-16.53576171875,18.868080809223,33.0715234375,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Cargas\DFT_Clientes.Paths[Union All Output 1]"
+          TopLeft="175.449994741132,457.799997956952">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,54.4962947769"
+              Start="0,0"
+              End="0,46.9962947769">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,46.9962947769" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Cargas\DFT_Clientes.Paths[Sort Output]"
+          TopLeft="363.5,201.266666515999">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,36.6666667691204"
+              Start="0,0"
+              End="0,29.1666667691204">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,29.1666667691204" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Cargas\DFT_Clientes.Paths[Row Count Output 12]"
+          TopLeft="172.799994536241,553.896292733852">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-16.2666657560401,40.7703722453408"
+              Start="0,0"
+              End="-16.2666657560401,33.2703722453408">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.3851861226704" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.3851861226704"
+                    Point2="0,20.3851861226704"
+                    Point3="-4,20.3851861226704" />
+                  <mssgle:LineSegment
+                    End="-12.2666657560401,20.3851861226704" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-12.2666657560401,20.3851861226704"
+                    Point2="-16.2666657560401,20.3851861226704"
+                    Point3="-16.2666657560401,24.3851861226704" />
+                  <mssgle:LineSegment
+                    End="-16.2666657560401,33.2703722453408" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Cargas\DFT_Clientes.Paths[Row Count Output 11]"
+          TopLeft="383.240724172398,560.733329723345">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-8.67405746020017,63.5259285883842"
+              Start="0,0"
+              End="-8.67405746020017,56.0259285883842">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,27.7629642941921" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,27.7629642941921"
+                    Point2="0,31.7629642941921"
+                    Point3="-4,31.7629642941921" />
+                  <mssgle:LineSegment
+                    End="-4.67405746020017,31.7629642941921" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-4.67405746020017,31.7629642941921"
+                    Point2="-8.67405746020017,31.7629642941921"
+                    Point3="-8.67405746020017,35.7629642941921" />
+                  <mssgle:LineSegment
+                    End="-8.67405746020017,56.0259285883842" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Cargas\DFT_Clientes.Paths[Row Count Output 1]"
+          TopLeft="379.966649774546,123.933332760798">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-15.5666497745456,35.7333337552017"
+              Start="0,0"
+              End="-15.5666497745456,28.2333337552017">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,13.8666668776008" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,13.8666668776008"
+                    Point2="0,17.8666668776008"
+                    Point3="-4,17.8666668776008" />
+                  <mssgle:LineSegment
+                    End="-11.5666497745456,17.8666668776008" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-11.5666497745456,17.8666668776008"
+                    Point2="-15.5666497745456,17.8666668776008"
+                    Point3="-15.5666497745456,21.8666668776008" />
+                  <mssgle:LineSegment
+                    End="-15.5666497745456,28.2333337552017" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Cargas\DFT_Clientes.Paths[Multicast Output 2]"
+          TopLeft="179.599995446868,636.266664979193">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="151.539385164266,121.490908877235"
+              Start="0,0"
+              End="151.539385164266,113.990908877235">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,45.3844126895573" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,45.3844126895573"
+                    Point2="0,49.3844126895573"
+                    Point3="4,49.3844126895573" />
+                  <mssgle:LineSegment
+                    End="147.539385164266,49.3844126895573" />
+                  <mssgle:CubicBezierSegment
+                    Point1="147.539385164266,49.3844126895573"
+                    Point2="151.539385164266,49.3844126895573"
+                    Point3="151.539385164266,53.3844126895573" />
+                  <mssgle:LineSegment
+                    End="151.539385164266,113.990908877235" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Cargas\DFT_Clientes.Paths[Multicast Output 1]"
+          TopLeft="158.591745946674,636.266664979193">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,87.0713778495253"
+              Start="0,0"
+              End="0,79.5713778495253">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,79.5713778495253" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Cargas\DFT_Clientes.Paths[Invalidos]"
+          TopLeft="442,360.666665801837">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="59.6666392568097,0"
+              Start="0,0"
+              End="52.1666392568097,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="52.1666392568097,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="5.63413994090487,5,40.898359375,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Cargas\DFT_Clientes.Paths[Inactivos]"
+          TopLeft="294,359.366665702396">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-36.3333388881549,0"
+              Start="0,0"
+              End="-28.8333388881549,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-28.8333388881549,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-34.9308491315774,5,41.028359375,9.470703125"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Cargas\DFT_Clientes.Paths[Flat File Source Output]"
+          TopLeft="387.999999726812,41.6666669860813">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-8.03334995226641,40.6666657747163"
+              Start="0,0"
+              End="-8.03334995226641,33.1666657747163">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.3333328873582" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.3333328873582"
+                    Point2="0,20.3333328873582"
+                    Point3="-4,20.3333328873582" />
+                  <mssgle:LineSegment
+                    End="-4.03334995226641,20.3333328873582" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-4.03334995226641,20.3333328873582"
+                    Point2="-8.03334995226641,20.3333328873582"
+                    Point3="-8.03334995226641,24.3333328873582" />
+                  <mssgle:LineSegment
+                    End="-8.03334995226641,33.1666657747163" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Cargas\DFT_Clientes.Paths[Derived Column Output2]"
           TopLeft="579.66663925681,383.399998318553">
@@ -12478,297 +14149,11 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Cargas\DFT_Clientes.Paths[Validos]"
-          TopLeft="371.766666575604,379.53333328512">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,54.985185055946"
-              Start="0,0"
-              End="0,47.485185055946">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,47.485185055946" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-16.53576171875,18.868080809223,33.0715234375,9.7490234375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Cargas\DFT_Clientes.Paths[Sort Output]"
-          TopLeft="363.5,201.266666515999">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,36.6666667691204"
-              Start="0,0"
-              End="0,29.1666667691204">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,29.1666667691204" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Cargas\DFT_Clientes.Paths[Invalidos]"
-          TopLeft="442,360.666665801837">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="59.6666392568097,0"
-              Start="0,0"
-              End="52.1666392568097,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="52.1666392568097,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="5.63413994090487,5,40.898359375,9.7490234375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Cargas\DFT_Clientes.Paths[Inactivos]"
-          TopLeft="294,359.366665702396">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-36.3333388881549,0"
-              Start="0,0"
-              End="-28.8333388881549,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="-28.8333388881549,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-34.9308491315774,5,41.028359375,9.470703125"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="141.6,41.6"
-          Id="Package\Cargas\DFT_Clientes\RC Leidos Cli"
-          TopLeft="309.166649774546,82.3333327607976" />
-        <EdgeLayout
-          Id="Package\Cargas\DFT_Clientes.Paths[Flat File Source Output]"
-          TopLeft="387.999999726812,41.6666669860813">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-8.03334995226641,40.6666657747163"
-              Start="0,0"
-              End="-8.03334995226641,33.1666657747163">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,16.3333328873582" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,16.3333328873582"
-                    Point2="0,20.3333328873582"
-                    Point3="-4,20.3333328873582" />
-                  <mssgle:LineSegment
-                    End="-4.03334995226641,20.3333328873582" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-4.03334995226641,20.3333328873582"
-                    Point2="-8.03334995226641,20.3333328873582"
-                    Point3="-8.03334995226641,24.3333328873582" />
-                  <mssgle:LineSegment
-                    End="-8.03334995226641,33.1666657747163" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Cargas\DFT_Clientes.Paths[Row Count Output 1]"
-          TopLeft="379.966649774546,123.933332760798">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-15.5666497745456,35.7333337552017"
-              Start="0,0"
-              End="-15.5666497745456,28.2333337552017">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,13.8666668776008" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,13.8666668776008"
-                    Point2="0,17.8666668776008"
-                    Point3="-4,17.8666668776008" />
-                  <mssgle:LineSegment
-                    End="-11.5666497745456,17.8666668776008" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-11.5666497745456,17.8666668776008"
-                    Point2="-15.5666497745456,17.8666668776008"
-                    Point3="-15.5666497745456,21.8666668776008" />
-                  <mssgle:LineSegment
-                    End="-15.5666497745456,28.2333337552017" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="160,41.6"
-          Id="Package\Cargas\DFT_Clientes\RC Insertados Cli"
-          TopLeft="303.240724172398,519.133329723345" />
-        <EdgeLayout
-          Id="Package\Cargas\DFT_Clientes.Paths[Data Conversion Output]"
-          TopLeft="379.387028661803,476.118518341066">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,43.0148113822791"
-              Start="0,0"
-              End="0,35.5148113822791">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,35.5148113822791" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Cargas\DFT_Clientes.Paths[Row Count Output 11]"
-          TopLeft="383.240724172398,560.733329723345">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-8.67405746020017,63.5259285883842"
-              Start="0,0"
-              End="-8.67405746020017,56.0259285883842">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,27.7629642941921" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,27.7629642941921"
-                    Point2="0,31.7629642941921"
-                    Point3="-4,31.7629642941921" />
-                  <mssgle:LineSegment
-                    End="-4.67405746020017,31.7629642941921" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-4.67405746020017,31.7629642941921"
-                    Point2="-8.67405746020017,31.7629642941921"
-                    Point3="-8.67405746020017,35.7629642941921" />
-                  <mssgle:LineSegment
-                    End="-8.67405746020017,56.0259285883842" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="145.6,41.6"
-          Id="Package\Cargas\DFT_Clientes\RC Errores Cli"
-          TopLeft="99.9999945362411,512.296292733852" />
-        <EdgeLayout
-          Id="Package\Cargas\DFT_Clientes.Paths[Union All Output 1]"
-          TopLeft="175.449994741132,457.799997956952">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,54.4962947769"
-              Start="0,0"
-              End="0,46.9962947769">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,46.9962947769" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Cargas\DFT_Clientes.Paths[Row Count Output 12]"
-          TopLeft="172.799994536241,553.896292733852">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-12.9074071392786,51.5629630105067"
-              Start="0,0"
-              End="-12.9074071392786,44.0629630105067">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,21.7814815052533" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,21.7814815052533"
-                    Point2="0,25.7814815052533"
-                    Point3="-4,25.7814815052533" />
-                  <mssgle:LineSegment
-                    End="-8.90740713927858,25.7814815052533" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-8.90740713927858,25.7814815052533"
-                    Point2="-12.9074071392786,25.7814815052533"
-                    Point3="-12.9074071392786,29.7814815052533" />
-                  <mssgle:LineSegment
-                    End="-12.9074071392786,44.0629630105067" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Cargas\DFT_Clientes\DimCliente">
+    design-time-name="Package\Cargas\DFT_Clientes\LogErrores">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -12781,7 +14166,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Cargas\DFT_Clientes\LogErrores">
+    design-time-name="Package\Cargas\DFT_Clientes\DimCliente">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -12799,10 +14184,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
       <GraphLayout
         Capacity="64" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="184,41.6"
-          Id="Package\Cargas\DFT_Productos\Unir Errores Productos"
-          TopLeft="19.9999997019767,576.79999332428" />
-        <NodeLayout
           Size="123.2,41.6"
           Id="Package\Cargas\DFT_Productos\Limpieza"
           TopLeft="282.999998986721,224" />
@@ -12810,6 +14191,10 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
           Size="122.4,41.6"
           Id="Package\Cargas\DFT_Productos\Err Costo"
           TopLeft="521.999992221594,333.399996557832" />
+        <NodeLayout
+          Size="156.8,41.6"
+          Id="Package\Cargas\DFT_Productos\Validar categoria"
+          TopLeft="250.999999001622,473.000000014901" />
         <NodeLayout
           Size="155.2,41.6"
           Id="Package\Cargas\DFT_Productos\Err SinCategoria"
@@ -12827,13 +14212,17 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
           Id="Package\Cargas\DFT_Productos\Err Inactivo"
           TopLeft="555.999991714954,463.399994620681" />
         <NodeLayout
-          Size="156.8,41.6"
-          Id="Package\Cargas\DFT_Productos\Validar categoria"
-          TopLeft="250.999999001622,473.000000014901" />
+          Size="184,41.6"
+          Id="Package\Cargas\DFT_Productos\Unir Errores Productos"
+          TopLeft="19.9999997019767,576.79999332428" />
+        <NodeLayout
+          Size="152,41.6"
+          Id="Package\Cargas\DFT_Productos\RC Leidos Prod"
+          TopLeft="262.461534541387,74.1538466352682" />
         <NodeLayout
           Size="179.2,41.6"
           Id="Package\Cargas\DFT_Productos\LogErrores Productos"
-          TopLeft="22.230768899505,746.338452753654" />
+          TopLeft="15.30769207959,823.261528530488" />
         <NodeLayout
           Size="140,41.6"
           Id="Package\Cargas\DFT_Productos\Err Categoria"
@@ -12843,53 +14232,29 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
           Id="Package\Cargas\DFT_Productos\Filtrar productos"
           TopLeft="256.999998986721,391" />
         <NodeLayout
-          Size="150.4,41.6"
-          Id="Package\Cargas\DFT_Productos\Convertir tipos"
-          TopLeft="261.999998986721,307" />
+          Size="169.6,41.6"
+          Id="Package\Cargas\DFT_Productos\RC Insertados Prod"
+          TopLeft="260.153842268082,604.923070274867" />
+        <NodeLayout
+          Size="155.2,41.6"
+          Id="Package\Cargas\DFT_Productos\RC Errores Prod"
+          TopLeft="31.6923072108856,659.69230053975" />
         <NodeLayout
           Size="164.8,41.6"
           Id="Package\Cargas\DFT_Productos\Quitar duplicados"
           TopLeft="265.461537471184,148.384615304378" />
         <NodeLayout
+          Size="150.4,41.6"
+          Id="Package\Cargas\DFT_Productos\Convertir tipos"
+          TopLeft="261.999998986721,307" />
+        <NodeLayout
+          Size="156,41.6"
+          Id="Package\Cargas\DFT_Productos\MC Errores Prod"
+          TopLeft="28.6769227951384,745.817945657479" />
+        <NodeLayout
           Size="124.8,41.6"
           Id="Package\Cargas\DFT_Productos\Err Precio"
           TopLeft="55.999999165535,374.999995484948" />
-        <EdgeLayout
-          Id="Package\Cargas\DFT_Productos.Paths[CostoInvalido]"
-          TopLeft="415.399998986721,411.8">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="106.599993234873,-57.6000034421683"
-              Start="0,0"
-              End="99.099993234873,-57.6000034421683">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="49.2999966174365,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="49.2999966174365,0"
-                    Point2="53.2999966174365,0"
-                    Point3="53.2999966174365,-4" />
-                  <mssgle:LineSegment
-                    End="53.2999966174365,-53.6000034421683" />
-                  <mssgle:CubicBezierSegment
-                    Point1="53.2999966174365,-53.6000034421683"
-                    Point2="53.2999966174365,-57.6000034421683"
-                    Point3="57.2999966174365,-57.6000034421683" />
-                  <mssgle:LineSegment
-                    End="99.099993234873,-57.6000034421683" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="22.7254458361865,1,61.1491015625,9.7490234375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <EdgeLayout
           Id="Package\Cargas\DFT_Productos.Paths[Validos]"
           TopLeft="332.799998994172,432.6">
@@ -12912,6 +14277,28 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             <mssgm:EdgeLabel
               BoundingBox="-16.53576171875,11.5754882887007,33.0715234375,9.7490234375"
               RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Cargas\DFT_Productos.Paths[Union All Output 1]"
+          TopLeft="110.646153456431,618.39999332428">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,41.29230721547"
+              Start="0,0"
+              End="0,33.79230721547">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33.79230721547" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -12968,8 +14355,64 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-108.699023377895,20.4278126452143,56.398046875,11.4677734375"
+              BoundingBox="-108.699023377896,20.4278126452143,56.398046875,11.4677734375"
               RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Cargas\DFT_Productos.Paths[Row Count Output 11]"
+          TopLeft="341.276920575247,646.523070274867">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,61.630773701118"
+              Start="0,0"
+              End="0,54.130773701118">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,54.130773701118" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Cargas\DFT_Productos.Paths[Row Count Output 1]"
+          TopLeft="338.461534541387,115.753846635268">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="9.40000292979738,32.6307686691102"
+              Start="0,0"
+              End="9.40000292979738,25.1307686691102">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,12.3153843345551" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,12.3153843345551"
+                    Point2="0,16.3153843345551"
+                    Point3="4,16.3153843345551" />
+                  <mssgle:LineSegment
+                    End="5.40000292979738,16.3153843345551" />
+                  <mssgle:CubicBezierSegment
+                    Point1="5.40000292979738,16.3153843345551"
+                    Point2="9.40000292979738,16.3153843345551"
+                    Point3="9.40000292979738,20.3153843345551" />
+                  <mssgle:LineSegment
+                    End="9.40000292979738,25.1307686691102" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -13045,6 +14488,42 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
+          Id="Package\Cargas\DFT_Productos.Paths[Lookup Match Output]"
+          TopLeft="304.599999001622,514.600000014901">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="40.3538432664596,90.3230702599658"
+              Start="0,0"
+              End="40.3538432664596,82.8230702599658">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,32.6766406510164" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,32.6766406510164"
+                    Point2="0,36.6766406510164"
+                    Point3="4,36.6766406510164" />
+                  <mssgle:LineSegment
+                    End="36.3538432664596,36.6766406510164" />
+                  <mssgle:CubicBezierSegment
+                    Point1="36.3538432664596,36.6766406510164"
+                    Point2="40.3538432664596,36.6766406510164"
+                    Point3="40.3538432664596,40.6766406510164" />
+                  <mssgle:LineSegment
+                    End="40.3538432664596,82.8230702599658" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-28.0144650855202,41.6766406510164,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package\Cargas\DFT_Productos.Paths[Inactivo]"
           TopLeft="361.266665653388,432.6">
           <EdgeLayout.Curve>
@@ -13078,6 +14557,40 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             <mssgm:EdgeLabel
               BoundingBox="111.928030218283,17.5047978159964,36.477265625,9.470703125"
               RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Cargas\DFT_Productos.Paths[Flat File Source Output]"
+          TopLeft="346.553845197879,50.1384622605947">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-8.09231065649243,24.0153843746735"
+              Start="0,0"
+              End="-8.09231065649243,16.5153843746735">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,8.00769218733674" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,8.00769218733674"
+                    Point2="0,12.0076921873367"
+                    Point3="-4,12.0076921873367" />
+                  <mssgle:LineSegment
+                    End="-4.09231065649243,12.0076921873367" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-4.09231065649243,12.0076921873367"
+                    Point2="-8.09231065649243,12.0076921873367"
+                    Point3="-8.09231065649243,16.0076921873367" />
+                  <mssgle:LineSegment
+                    End="-8.09231065649243,16.5153843746735" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -13270,132 +14783,78 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="152,41.6"
-          Id="Package\Cargas\DFT_Productos\RC Leidos Prod"
-          TopLeft="262.461534541387,74.1538466352682" />
         <EdgeLayout
-          Id="Package\Cargas\DFT_Productos.Paths[Flat File Source Output]"
-          TopLeft="346.553845197879,50.1384622605947">
+          Id="Package\Cargas\DFT_Productos.Paths[CostoInvalido]"
+          TopLeft="415.399998986721,411.8">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-8.09231065649243,24.0153843746735"
+              EndConnector="106.599993234873,-57.6000034421683"
               Start="0,0"
-              End="-8.09231065649243,16.5153843746735">
+              End="99.099993234873,-57.6000034421683">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,8.00769218733674" />
+                    End="49.2999966174365,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,8.00769218733674"
-                    Point2="0,12.0076921873367"
-                    Point3="-4,12.0076921873367" />
+                    Point1="49.2999966174365,0"
+                    Point2="53.2999966174365,0"
+                    Point3="53.2999966174365,-4" />
                   <mssgle:LineSegment
-                    End="-4.09231065649243,12.0076921873367" />
+                    End="53.2999966174365,-53.6000034421683" />
                   <mssgle:CubicBezierSegment
-                    Point1="-4.09231065649243,12.0076921873367"
-                    Point2="-8.09231065649243,12.0076921873367"
-                    Point3="-8.09231065649243,16.0076921873367" />
+                    Point1="53.2999966174365,-53.6000034421683"
+                    Point2="53.2999966174365,-57.6000034421683"
+                    Point3="57.2999966174365,-57.6000034421683" />
                   <mssgle:LineSegment
-                    End="-8.09231065649243,16.5153843746735" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Cargas\DFT_Productos.Paths[Row Count Output 1]"
-          TopLeft="338.461534541387,115.753846635268">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="9.40000292979738,32.6307686691102"
-              Start="0,0"
-              End="9.40000292979738,25.1307686691102">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,12.3153843345551" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,12.3153843345551"
-                    Point2="0,16.3153843345551"
-                    Point3="4,16.3153843345551" />
-                  <mssgle:LineSegment
-                    End="5.40000292979738,16.3153843345551" />
-                  <mssgle:CubicBezierSegment
-                    Point1="5.40000292979738,16.3153843345551"
-                    Point2="9.40000292979738,16.3153843345551"
-                    Point3="9.40000292979738,20.3153843345551" />
-                  <mssgle:LineSegment
-                    End="9.40000292979738,25.1307686691102" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="169.6,41.6"
-          Id="Package\Cargas\DFT_Productos\RC Insertados Prod"
-          TopLeft="260.153842268082,604.923070274867" />
-        <EdgeLayout
-          Id="Package\Cargas\DFT_Productos.Paths[Lookup Match Output]"
-          TopLeft="304.599999001622,514.600000014901">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="40.3538432664596,90.3230702599658"
-              Start="0,0"
-              End="40.3538432664596,82.8230702599658">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,32.6766406510164" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,32.6766406510164"
-                    Point2="0,36.6766406510164"
-                    Point3="4,36.6766406510164" />
-                  <mssgle:LineSegment
-                    End="36.3538432664596,36.6766406510164" />
-                  <mssgle:CubicBezierSegment
-                    Point1="36.3538432664596,36.6766406510164"
-                    Point2="40.3538432664596,36.6766406510164"
-                    Point3="40.3538432664596,40.6766406510164" />
-                  <mssgle:LineSegment
-                    End="40.3538432664596,82.8230702599658" />
+                    End="99.099993234873,-57.6000034421683" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-28.0144650855202,41.6766406510164,96.3827734375,11.609375"
+              BoundingBox="22.7254458361865,1,61.1491015625,9.7490234375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Cargas\DFT_Productos.Paths[Row Count Output 11]"
-          TopLeft="341.276920575247,646.523070274867">
+          Id="Package\Cargas\DFT_Productos.Paths[Row Count Output 12]"
+          TopLeft="107.984615003012,701.29230053975">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,61.630773701118"
+              EndConnector="0,44.5256451177291"
               Start="0,0"
-              End="0,54.130773701118">
+              End="0,37.0256451177291">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,54.130773701118" />
+                    End="0,37.0256451177291" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Cargas\DFT_Productos.Paths[Multicast Output 1]"
+          TopLeft="105.792307437364,787.417945657479">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,35.8435828730085"
+              Start="0,0"
+              End="0,28.3435828730085">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,28.3435828730085" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -13405,45 +14864,35 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <NodeLayout
-          Size="155.2,41.6"
-          Id="Package\Cargas\DFT_Productos\RC Errores Prod"
-          TopLeft="31.6923072108856,659.69230053975" />
+          Size="183.2,41.6"
+          Id="Package\Cargas\DFT_Productos\ErroresProductos CSV"
+          TopLeft="237.8461502928,817.999996779057" />
         <EdgeLayout
-          Id="Package\Cargas\DFT_Productos.Paths[Union All Output 1]"
-          TopLeft="110.646153456431,618.39999332428">
+          Id="Package\Cargas\DFT_Productos.Paths[Multicast Output 2]"
+          TopLeft="131.343589461805,787.417945657479">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,41.2923072154704"
+              EndConnector="198.102560830995,30.5820511215775"
               Start="0,0"
-              End="0,33.7923072154704">
+              End="198.102560830995,23.0820511215775">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,33.7923072154704" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Cargas\DFT_Productos.Paths[Row Count Output 12]"
-          TopLeft="110.561538055195,701.29230053975">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,45.0461522139032"
-              Start="0,0"
-              End="0,37.5461522139032">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
+                    End="0,8.41910705444771" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,8.41910705444771"
+                    Point2="0,12.4191070544477"
+                    Point3="4,12.4191070544477" />
                   <mssgle:LineSegment
-                    End="0,37.5461522139032" />
+                    End="194.102560830995,12.4191070544477" />
+                  <mssgle:CubicBezierSegment
+                    Point1="194.102560830995,12.4191070544477"
+                    Point2="198.102560830995,12.4191070544477"
+                    Point3="198.102560830995,16.4191070544477" />
+                  <mssgle:LineSegment
+                    End="198.102560830995,23.0820511215775" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -13455,19 +14904,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Cargas\DFT_Productos\DimProducto">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Cargas\DFT_Productos\Validar categoria">
     <Properties>
@@ -13488,6 +14924,19 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Cargas\DFT_Productos\DimProducto">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
@@ -13554,79 +15003,33 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
           Id="Package\Cargas\DFT_Ventas\Calcular metricas"
           TopLeft="197.512820207155,598.333331942558" />
         <NodeLayout
+          Size="166.4,41.6"
+          Id="Package\Cargas\DFT_Ventas\Unir errores ventas"
+          TopLeft="488.461531182894,630.410247016412" />
+        <NodeLayout
           Size="127.2,41.6"
           Id="Package\Cargas\DFT_Ventas\Err Cliente"
           TopLeft="504.615377096029,420.625644825055" />
         <NodeLayout
+          Size="148,41.6"
+          Id="Package\Cargas\DFT_Ventas\RC Leidos Ven"
+          TopLeft="208.533331108093,56.7999991854032" />
+        <NodeLayout
           Size="164.8,41.6"
           Id="Package\Cargas\DFT_Ventas\LogErrores Ventas"
-          TopLeft="463.230762328093,804.307680322573" />
+          TopLeft="464.139853223637,868.853133906225" />
+        <NodeLayout
+          Size="166.4,41.6"
+          Id="Package\Cargas\DFT_Ventas\RC Insertados Ven"
+          TopLeft="186.533331435919,663.199994814396" />
         <NodeLayout
           Size="148,41.6"
           Id="Package\Cargas\DFT_Ventas\Buscar cliente"
           TopLeft="208.153845764124,386.64102519934" />
         <NodeLayout
-          Size="166.4,41.6"
-          Id="Package\Cargas\DFT_Ventas\Unir errores ventas"
-          TopLeft="488.461531182894,630.410247016412" />
-        <EdgeLayout
-          Id="Package\Cargas\DFT_Ventas.Paths[Validos]"
-          TopLeft="295.979486824152,347.933332926035">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-13.8256410600282,38.707692273305"
-              Start="0,0"
-              End="-13.8256410600282,31.207692273305">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,11.7397024934544" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,11.7397024934544"
-                    Point2="0,15.7397024934544"
-                    Point3="-4,15.7397024934544" />
-                  <mssgle:LineSegment
-                    End="-9.8256410600282,15.7397024934544" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-9.8256410600282,15.7397024934544"
-                    Point2="-13.8256410600282,15.7397024934544"
-                    Point3="-13.8256410600282,19.7397024934544" />
-                  <mssgle:LineSegment
-                    End="-13.8256410600282,31.207692273305" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-23.4485822487641,20.7397024934544,33.0715234375,9.7490234375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Cargas\DFT_Ventas.Paths[Sort Output]"
-          TopLeft="275.915384248587,166.933332926035">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,45.9384615155366"
-              Start="0,0"
-              End="0,38.4384615155366">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,38.4384615155366" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          Size="151.2,41.6"
+          Id="Package\Cargas\DFT_Ventas\RC Errores Ven"
+          TopLeft="473.624236288577,708.690903879115" />
         <EdgeLayout
           Id="Package\Cargas\DFT_Ventas.Paths[PrecioInvalido]"
           TopLeft="250.912820157485,347.933332926035">
@@ -13737,6 +15140,30 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Cargas\DFT_Ventas.Paths[Lookup Match Output1]"
+          TopLeft="280.799999627471,428.24102519934">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,29.092307726695"
+              Start="0,0"
+              End="0,21.592307726695">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,21.592307726695" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,4.99146636334748,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Cargas\DFT_Ventas.Paths[Lookup Match Output]"
           TopLeft="279.479486848987,498.933332926035">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -13760,27 +15187,71 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Cargas\DFT_Ventas.Paths[Lookup Match Output]"
-          TopLeft="280.799999627471,428.24102519934">
+          Id="Package\Cargas\DFT_Ventas.Paths[Flat File Source Output]"
+          TopLeft="200.179486834085,20.8000002384186">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,29.092307726695"
+              EndConnector="8.35384427400783,56.7999989469846"
               Start="0,0"
-              End="0,21.592307726695">
+              End="0.853844274007827,56.7999989469846">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,21.592307726695" />
+                    End="-18.5,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-18.5,0"
+                    Point2="-22.5,0"
+                    Point3="-22.5,4" />
+                  <mssgle:LineSegment
+                    End="-22.5,52.7999989469846" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-22.5,52.7999989469846"
+                    Point2="-22.5,56.7999989469846"
+                    Point3="-18.5,56.7999989469846" />
+                  <mssgle:LineSegment
+                    End="0.853844274007827,56.7999989469846" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,4.99146636334748,96.3827734375,11.609375"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Cargas\DFT_Ventas.Paths[Derived Column Output5]"
+          TopLeft="279.512820207155,639.933331942558">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-9.7794887712364,23.2666628718376"
+              Start="0,0"
+              End="-9.7794887712364,15.7666628718376">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,7.63333143591882" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,7.63333143591882"
+                    Point2="0,11.6333314359188"
+                    Point3="-4,11.6333314359188" />
+                  <mssgle:LineSegment
+                    End="-5.7794887712364,11.6333314359188" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-5.7794887712364,11.6333314359188"
+                    Point2="-9.7794887712364,11.6333314359188"
+                    Point3="-9.7794887712364,15.6333314359188" />
+                  <mssgle:LineSegment
+                    End="-9.7794887712364,15.7666628718376" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -14047,36 +15518,124 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="148,41.6"
-          Id="Package\Cargas\DFT_Ventas\RC Leidos Ven"
-          TopLeft="208.533331108093,56.7999991854032" />
         <EdgeLayout
-          Id="Package\Cargas\DFT_Ventas.Paths[Flat File Source Output]"
-          TopLeft="200.179486834085,20.8000002384186">
+          Id="Package\Cargas\DFT_Ventas.Paths[Validos]"
+          TopLeft="295.979486824152,347.933332926035">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="8.35384427400783,56.7999989469846"
+              EndConnector="-13.8256410600282,38.707692273305"
               Start="0,0"
-              End="0.853844274007827,56.7999989469846">
+              End="-13.8256410600282,31.207692273305">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="-18.5,0" />
+                    End="0,11.7397024934544" />
                   <mssgle:CubicBezierSegment
-                    Point1="-18.5,0"
-                    Point2="-22.5,0"
-                    Point3="-22.5,4" />
+                    Point1="0,11.7397024934544"
+                    Point2="0,15.7397024934544"
+                    Point3="-4,15.7397024934544" />
                   <mssgle:LineSegment
-                    End="-22.5,52.7999989469846" />
+                    End="-9.8256410600282,15.7397024934544" />
                   <mssgle:CubicBezierSegment
-                    Point1="-22.5,52.7999989469846"
-                    Point2="-22.5,56.7999989469846"
-                    Point3="-18.5,56.7999989469846" />
+                    Point1="-9.8256410600282,15.7397024934544"
+                    Point2="-13.8256410600282,15.7397024934544"
+                    Point3="-13.8256410600282,19.7397024934544" />
                   <mssgle:LineSegment
-                    End="0.853844274007827,56.7999989469846" />
+                    End="-13.8256410600282,31.207692273305" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-23.4485822487641,20.7397024934544,33.0715234375,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Cargas\DFT_Ventas.Paths[Union All Output 1]"
+          TopLeft="571.661531182894,672.010247016412">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-22.4372948943173,36.6806568627028"
+              Start="0,0"
+              End="-22.4372948943173,29.1806568627028">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,14.3403284313514" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,14.3403284313514"
+                    Point2="0,18.3403284313514"
+                    Point3="-4,18.3403284313514" />
+                  <mssgle:LineSegment
+                    End="-18.4372948943173,18.3403284313514" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-18.4372948943173,18.3403284313514"
+                    Point2="-22.4372948943173,18.3403284313514"
+                    Point3="-22.4372948943173,22.3403284313514" />
+                  <mssgle:LineSegment
+                    End="-22.4372948943173,29.1806568627028" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Cargas\DFT_Ventas.Paths[Sort Output]"
+          TopLeft="275.915384248587,166.933332926035">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,45.9384615155366"
+              Start="0,0"
+              End="0,38.4384615155366">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,38.4384615155366" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Cargas\DFT_Ventas.Paths[Row Count Output 11]"
+          TopLeft="269.733331435919,704.799994814396">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-14.9538443038101,29.6000030497709"
+              Start="0,0"
+              End="-14.9538443038101,22.1000030497709">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,10.8000015248854" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,10.8000015248854"
+                    Point2="0,14.8000015248854"
+                    Point3="-4,14.8000015248854" />
+                  <mssgle:LineSegment
+                    End="-10.9538443038101,14.8000015248854" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-10.9538443038101,14.8000015248854"
+                    Point2="-14.9538443038101,14.8000015248854"
+                    Point3="-14.9538443038101,18.8000015248854" />
+                  <mssgle:LineSegment
+                    End="-14.9538443038101,22.1000030497709" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -14120,35 +15679,23 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <NodeLayout
-          Size="166.4,41.6"
-          Id="Package\Cargas\DFT_Ventas\RC Insertados Ven"
-          TopLeft="186.533331435919,663.199994814396" />
+          Size="152.8,41.6"
+          Id="Package\Cargas\DFT_Ventas\MC Errores Ven"
+          TopLeft="473.636356578632,785.090905433351" />
         <EdgeLayout
-          Id="Package\Cargas\DFT_Ventas.Paths[Derived Column Output5]"
-          TopLeft="279.512820207155,639.933331942558">
+          Id="Package\Cargas\DFT_Ventas.Paths[Row Count Output 12]"
+          TopLeft="549.630296433604,750.290903879115">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-9.7794887712364,23.2666628718376"
+              EndConnector="0,34.8000015542366"
               Start="0,0"
-              End="-9.7794887712364,15.7666628718376">
+              End="0,27.3000015542366">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,7.63333143591882" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,7.63333143591882"
-                    Point2="0,11.6333314359188"
-                    Point3="-4,11.6333314359188" />
-                  <mssgle:LineSegment
-                    End="-5.7794887712364,11.6333314359188" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-5.7794887712364,11.6333314359188"
-                    Point2="-9.7794887712364,11.6333314359188"
-                    Point3="-9.7794887712364,15.6333314359188" />
-                  <mssgle:LineSegment
-                    End="-9.7794887712364,15.7666628718376" />
+                    End="0,27.3000015542366" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -14158,31 +15705,19 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Cargas\DFT_Ventas.Paths[Row Count Output 11]"
-          TopLeft="269.733331435919,704.799994814396">
+          Id="Package\Cargas\DFT_Ventas.Paths[Multicast Output 1]"
+          TopLeft="548.288104901135,826.690905433351">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-14.9538443038101,29.6000030497709"
+              EndConnector="0,42.1622284728738"
               Start="0,0"
-              End="-14.9538443038101,22.1000030497709">
+              End="0,34.6622284728738">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,10.8000015248854" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,10.8000015248854"
-                    Point2="0,14.8000015248854"
-                    Point3="-4,14.8000015248854" />
-                  <mssgle:LineSegment
-                    End="-10.9538443038101,14.8000015248854" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-10.9538443038101,14.8000015248854"
-                    Point2="-14.9538443038101,14.8000015248854"
-                    Point3="-14.9538443038101,18.8000015248854" />
-                  <mssgle:LineSegment
-                    End="-14.9538443038101,22.1000030497709" />
+                    End="0,34.6622284728738" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -14192,57 +15727,35 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <NodeLayout
-          Size="151.2,41.6"
-          Id="Package\Cargas\DFT_Ventas\RC Errores Ven"
-          TopLeft="474.533327184121,729.599994476636" />
+          Size="168.8,41.6"
+          Id="Package\Cargas\DFT_Ventas\ErroresVentas CSV"
+          TopLeft="700.909080464732,861.272723249414" />
         <EdgeLayout
-          Id="Package\Cargas\DFT_Ventas.Paths[Union All Output 1]"
-          TopLeft="571.661531182894,672.010247016412">
+          Id="Package\Cargas\DFT_Ventas.Paths[Multicast Output 2]"
+          TopLeft="574.169689911965,826.690905433351">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-21.5282039987731,57.5897474602243"
+              EndConnector="211.139390552766,34.5818178160623"
               Start="0,0"
-              End="-21.5282039987731,50.0897474602243">
+              End="211.139390552766,27.0818178160623">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,24.7948737301122" />
+                    End="0,10.0477436102554" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,24.7948737301122"
-                    Point2="0,28.7948737301122"
-                    Point3="-4,28.7948737301122" />
+                    Point1="0,10.0477436102554"
+                    Point2="0,14.0477436102554"
+                    Point3="4,14.0477436102554" />
                   <mssgle:LineSegment
-                    End="-17.5282039987731,28.7948737301122" />
+                    End="207.139390552766,14.0477436102554" />
                   <mssgle:CubicBezierSegment
-                    Point1="-17.5282039987731,28.7948737301122"
-                    Point2="-21.5282039987731,28.7948737301122"
-                    Point3="-21.5282039987731,32.7948737301122" />
+                    Point1="207.139390552766,14.0477436102554"
+                    Point2="211.139390552766,14.0477436102554"
+                    Point3="211.139390552766,18.0477436102554" />
                   <mssgle:LineSegment
-                    End="-21.5282039987731,50.0897474602243" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Cargas\DFT_Ventas.Paths[Row Count Output 12]"
-          TopLeft="547.882044756107,771.199994476636">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,33.107685845937"
-              Start="0,0"
-              End="0,25.607685845937">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,25.607685845937" />
+                    End="211.139390552766,27.0818178160623" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
